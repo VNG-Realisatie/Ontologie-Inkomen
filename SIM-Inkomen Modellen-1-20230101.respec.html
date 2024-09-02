@@ -1,0 +1,3090 @@
+<!DOCTYPE HTML><html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>Catalogus conceptueel model: Inkomen Modellen</title><script src="" class="remove"></script><script class="remove">
+                    var respecConfig = {
+                        specStatus: "ED",
+                        editors: [{
+                            name: "JanBrinkkemper, KING",
+                            url: "http://your.site/",
+                        }],
+                        edDraftURI: "http://some.place",
+                        shortName: "msgdoc",
+                        maxTocLevel: 4
+                    };
+                </script><style type="text/css">
+                    th, td {
+                        vertical-align: top;
+                    }
+                    th>p, td>p {
+                        margin: 0 0 1em;
+                    }
+                    table {
+                        width: 100%;
+                    }
+                </style>
+   </head>
+   <body>
+      <section id="abstract">
+         <p>
+            Samenvatting conceptueel model..... INSERT HERE
+            </p>
+      </section>
+      <section id="sotd">
+         <p>
+            Deze documentatie van het conceptueel model is laatst bijgewerkt op September 2, 2024 at 15:01:33.
+            </p>
+      </section>
+      <section id="prologue" class="informative" level="1">
+         <h1>Proloog</h1>
+         <p>
+            Proloog conceptueel model hier.
+            </p>
+      </section>
+      <section id="cat" class="normative">
+         <h2>Gegevensdefinitie</h2>
+         <p><b>Deze tekst is normatief.</b>
+            <!--SIM-InkomenModellen-1.0-1-20230101-20240902-150116 imvertor 4.0.0--></p>
+         <section>
+            <h3>Objecttypen   </h3>
+            
+            <section id="global_class_Normafwijking_Maatregelopuitkering">
+               <h4>   Maatregel op uitkering</h4>
+               
+               <table style="width: 100%;">
+                  <colgroup style="width: 30%;"></colgroup>
+                  <colgroup style="width: 70%;"></colgroup>
+                  <tbody>
+                     <tr>
+                        <th>Naam</th>
+                        <td>Maatregel op uitkering</td>
+                     </tr>
+                     <tr>
+                        <th>Herkomst</th>
+                        <td> </td>
+                     </tr>
+                     <tr>
+                        <th>Definitie</th>
+                        <td> </td>
+                     </tr>
+                     <tr>
+                        <th>Herkomst definitie</th>
+                        <td> </td>
+                     </tr>
+                     <tr>
+                        <th>Datum opname</th>
+                        <td> </td>
+                     </tr>
+                     <tr>
+                        <th>Unieke aanduiding</th>
+                        <td> </td>
+                     </tr>
+                     <tr>
+                        <th>Indicatie abstract object</th>
+                        <td>Nee</td>
+                     </tr>
+                  </tbody>
+               </table>
+               
+               <h5>Overzicht attributen  </h5>
+               
+               <table style="width: 100%;">
+                  <colgroup style="width: 30%;"></colgroup>
+                  <colgroup style="width: 50%;"></colgroup>
+                  <colgroup style="width: 10%;"></colgroup>
+                  <colgroup style="width: 10%;"></colgroup>
+                  <tbody>
+                     <tr>
+                        <th>Attribuutnaam</th>
+                        <th>Definitie</th>
+                        <th>Formaat</th>
+                        <th>Card</th>
+                     </tr>
+                     <tr>
+                        <td>
+                           <a class="link" href="#detail_attribute_Normafwijking_Maatregelopuitkering_Coderedenmaatregel">Code reden maatregel</a>
+                           </td>
+                        <td></td>
+                        <td>
+                           <a class="link" href="#detail_class_Normafwijking_CodeRedenMaatregel">Code­Reden­Maatregel</a>
+                           </td>
+                        <td>1</td>
+                     </tr>
+                     <tr>
+                        <td>
+                           <a class="link" href="#detail_attribute_Normafwijking_Maatregelopuitkering_Motivatieverminderingmaatregel">Motivatie vermindering maatregel</a>
+                           </td>
+                        <td></td>
+                        <td>
+                           <a class="external-link" href="https://docs.geostandaarden.nl/mim/def-st-mim-20220217/#primitive-datatypes">Character­String</a>
+                           </td>
+                        <td>1</td>
+                     </tr>
+                     <tr>
+                        <td>
+                           <a class="link" href="#detail_attribute_Normafwijking_Maatregelopuitkering_Percentagemaatregel">Percentage maatregel</a>
+                           </td>
+                        <td></td>
+                        <td>
+                           <a class="external-link" href="https://docs.geostandaarden.nl/mim/def-st-mim-20220217/#primitive-datatypes">Integer</a>
+                           </td>
+                        <td>1</td>
+                     </tr>
+                  </tbody>
+               </table>
+               
+               
+               <h5>Overzicht relaties  </h5>
+               
+               <table style="width: 100%;">
+                  <colgroup style="width: 50%;"></colgroup>
+                  <colgroup style="width: 50%;"></colgroup>
+                  <tbody>
+                     <tr>
+                        <th>Relatienaam met kardinaliteiten</th>
+                        <th>Definitie</th>
+                     </tr>
+                     <tr>
+                        <td>
+                           
+                           <a class="link" href="#global_class_Normafwijking_Afwijkendemaatregel">Afwijkende maatregel</a>
+                           
+                           [ 1 ]
+                           
+                           <a class="link" href="#detail_association_Normafwijking_Afwijkendemaatregel_AfwijkendemaatregelrefereertnaarMaatregelopuitkering">Afwijkende maatregel refereert naar Maatregel op uitkering</a>
+                           
+                           Maatregel op uitkering
+                           [ 1 ]
+                           </td>
+                        <td></td>
+                     </tr>
+                     <tr>
+                        <td>
+                           Maatregel op uitkering
+                           is specialisatie van
+                           
+                           <a class="link" href="#global_class_Normafwijking_Maatregel">Maatregel</a>
+                           
+                           </td>
+                        <td></td>
+                     </tr>
+                  </tbody>
+               </table>
+               
+               
+               </section>
+            
+            <section id="global_class_Normafwijking_Boete">
+               <h4>   Boete</h4>
+               
+               <table style="width: 100%;">
+                  <colgroup style="width: 30%;"></colgroup>
+                  <colgroup style="width: 70%;"></colgroup>
+                  <tbody>
+                     <tr>
+                        <th>Naam</th>
+                        <td>Boete</td>
+                     </tr>
+                     <tr>
+                        <th>Herkomst</th>
+                        <td> </td>
+                     </tr>
+                     <tr>
+                        <th>Definitie</th>
+                        <td>Een boete is de uitkomst van een onderzoek naar rechtmatigheid. Dit leidt in principe
+                           tot een terug te vorderen bedrag. Er is voor gekozen om dit als aparte klasse te modelleren
+                           en niet als typering van een vordering, omdat we dit gegeven ook willen gebruiken
+                           bij risicoprofilering. Als de vordering niet (meer) bestaat, zou dit gegeven daarmee
+                           niet beschikbaar zijn.Daarnaast kan dit ook helpen bij het vastleggen van een boete
+                           van een poging tot fraude (zonder financiele consequenties, waardoor geen vordering
+                           is ontstaan. (tijdig ondekte valsheid in geschifte e.d.).Bij bedragen hoger dan 50.000
+                           euro, wordt aangifte van fraude gedaan en volgt strafrechtelijk onderzoek.Feitelijk
+                           is het uitgangspunt bij het opleggen van een boete dat er altijd sprake is van opzet.
+                           Daarom is een apart gegeven Fraude niet opgenomen.</td>
+                     </tr>
+                     <tr>
+                        <th>Herkomst definitie</th>
+                        <td> </td>
+                     </tr>
+                     <tr>
+                        <th>Datum opname</th>
+                        <td> </td>
+                     </tr>
+                     <tr>
+                        <th>Unieke aanduiding</th>
+                        <td> </td>
+                     </tr>
+                     <tr>
+                        <th>Indicatie abstract object</th>
+                        <td>Nee</td>
+                     </tr>
+                  </tbody>
+               </table>
+               
+               <h5>Overzicht attributen  </h5>
+               
+               <table style="width: 100%;">
+                  <colgroup style="width: 30%;"></colgroup>
+                  <colgroup style="width: 50%;"></colgroup>
+                  <colgroup style="width: 10%;"></colgroup>
+                  <colgroup style="width: 10%;"></colgroup>
+                  <tbody>
+                     <tr>
+                        <th>Attribuutnaam</th>
+                        <th>Definitie</th>
+                        <th>Formaat</th>
+                        <th>Card</th>
+                     </tr>
+                     <tr>
+                        <td>
+                           <a class="link" href="#detail_attribute_Normafwijking_Boete_Bedragboete">Bedrag boete</a>
+                           </td>
+                        <td></td>
+                        <td>
+                           <a class="link" href="#global_class_Normafwijking_Geldbedrag">Geldbedrag</a>
+                           </td>
+                        <td>1</td>
+                     </tr>
+                     <tr>
+                        <td>
+                           <a class="link" href="#detail_attribute_Normafwijking_Boete_Boetevorm">Boetevorm</a>
+                           </td>
+                        <td></td>
+                        <td>
+                           <a class="external-link" href="https://docs.geostandaarden.nl/mim/def-st-mim-20220217/#primitive-datatypes">Character­String</a>
+                           </td>
+                        <td>1</td>
+                     </tr>
+                     <tr>
+                        <td>
+                           <a class="link" href="#detail_attribute_Normafwijking_Boete_Redenboete">Reden boete</a>
+                           </td>
+                        <td></td>
+                        <td>
+                           <a class="external-link" href="https://docs.geostandaarden.nl/mim/def-st-mim-20220217/#primitive-datatypes">Character­String</a>
+                           </td>
+                        <td>1</td>
+                     </tr>
+                     <tr>
+                        <td>
+                           <a class="link" href="#detail_attribute_Normafwijking_Boete_Voorwaardeboete">Voorwaarde boete</a>
+                           </td>
+                        <td></td>
+                        <td>
+                           <a class="external-link" href="https://docs.geostandaarden.nl/mim/def-st-mim-20220217/#primitive-datatypes">Character­String</a>
+                           </td>
+                        <td>1</td>
+                     </tr>
+                  </tbody>
+               </table>
+               
+               
+               <h5>Overzicht relaties  </h5>
+               
+               <table style="width: 100%;">
+                  <colgroup style="width: 50%;"></colgroup>
+                  <colgroup style="width: 50%;"></colgroup>
+                  <tbody>
+                     <tr>
+                        <th>Relatienaam met kardinaliteiten</th>
+                        <th>Definitie</th>
+                     </tr>
+                     <tr>
+                        <td>
+                           Boete
+                           is specialisatie van
+                           
+                           <a class="link" href="#global_class_Normafwijking_Maatregel">Maatregel</a>
+                           
+                           </td>
+                        <td></td>
+                     </tr>
+                  </tbody>
+               </table>
+               
+               
+               </section>
+            
+            <section id="global_class_Normafwijking_Maatregel">
+               <h4>   Maatregel</h4>
+               
+               <table style="width: 100%;">
+                  <colgroup style="width: 30%;"></colgroup>
+                  <colgroup style="width: 70%;"></colgroup>
+                  <tbody>
+                     <tr>
+                        <th>Naam</th>
+                        <td>Maatregel</td>
+                     </tr>
+                     <tr>
+                        <th>Herkomst</th>
+                        <td> </td>
+                     </tr>
+                     <tr>
+                        <th>Definitie</th>
+                        <td> </td>
+                     </tr>
+                     <tr>
+                        <th>Herkomst definitie</th>
+                        <td> </td>
+                     </tr>
+                     <tr>
+                        <th>Datum opname</th>
+                        <td> </td>
+                     </tr>
+                     <tr>
+                        <th>Unieke aanduiding</th>
+                        <td> </td>
+                     </tr>
+                     <tr>
+                        <th>Indicatie abstract object</th>
+                        <td>Nee</td>
+                     </tr>
+                  </tbody>
+               </table>
+               
+               <h5>Overzicht attributen  </h5>
+               
+               <table style="width: 100%;">
+                  <colgroup style="width: 30%;"></colgroup>
+                  <colgroup style="width: 50%;"></colgroup>
+                  <colgroup style="width: 10%;"></colgroup>
+                  <colgroup style="width: 10%;"></colgroup>
+                  <tbody>
+                     <tr>
+                        <th>Attribuutnaam</th>
+                        <th>Definitie</th>
+                        <th>Formaat</th>
+                        <th>Card</th>
+                     </tr>
+                     <tr>
+                        <td>
+                           <a class="link" href="#detail_attribute_Normafwijking_Maatregel_Datumaanvangmaatregel">Datum aanvang maatregel</a>
+                           </td>
+                        <td></td>
+                        <td>
+                           <a class="external-link" href="https://docs.geostandaarden.nl/mim/def-st-mim-20220217/#primitive-datatypes">Date</a>
+                           </td>
+                        <td>1</td>
+                     </tr>
+                     <tr>
+                        <td>
+                           <a class="link" href="#detail_attribute_Normafwijking_Maatregel_Datumeindemaatregel">Datum einde maatregel</a>
+                           </td>
+                        <td></td>
+                        <td>
+                           <a class="external-link" href="https://docs.geostandaarden.nl/mim/def-st-mim-20220217/#primitive-datatypes">Date</a>
+                           </td>
+                        <td>1</td>
+                     </tr>
+                     <tr>
+                        <td>
+                           <a class="link" href="#detail_attribute_Normafwijking_Maatregel_Datumvaststellingmaatregel">Datum vaststelling maatregel</a>
+                           </td>
+                        <td></td>
+                        <td>
+                           <a class="external-link" href="https://docs.geostandaarden.nl/mim/def-st-mim-20220217/#primitive-datatypes">Date</a>
+                           </td>
+                        <td>1</td>
+                     </tr>
+                     <tr>
+                        <td>
+                           <a class="link" href="#detail_attribute_Normafwijking_Maatregel_MaatregelID">Maatregel ID</a>
+                           </td>
+                        <td></td>
+                        <td>
+                           <a class="external-link" href="https://docs.geostandaarden.nl/mim/def-st-mim-20220217/#primitive-datatypes">Character­String</a>
+                           </td>
+                        <td>1</td>
+                     </tr>
+                     <tr>
+                        <td>
+                           <a class="link" href="#detail_attribute_Normafwijking_Maatregel_Typemaatregel">Type maatregel</a>
+                           </td>
+                        <td></td>
+                        <td>
+                           <a class="link" href="#detail_class_Normafwijking_TypeMaatregel">Type­Maatregel</a>
+                           </td>
+                        <td>1</td>
+                     </tr>
+                  </tbody>
+               </table>
+               
+               
+               <h5>Overzicht relaties  </h5>
+               
+               <table style="width: 100%;">
+                  <colgroup style="width: 50%;"></colgroup>
+                  <colgroup style="width: 50%;"></colgroup>
+                  <tbody>
+                     <tr>
+                        <th>Relatienaam met kardinaliteiten</th>
+                        <th>Definitie</th>
+                     </tr>
+                     <tr>
+                        <td>
+                           
+                           <a class="link" href="#global_class_Normafwijking_Normafwijking">Normafwijking</a>
+                           
+                           [ 0 .. 1 ]
+                           
+                           <a class="link" href="#detail_association_Normafwijking_Normafwijking_NormafwijkingleidttotMaatregel">Normafwijking leidt tot Maatregel</a>
+                           
+                           Maatregel
+                           [ 1 ]
+                           </td>
+                        <td></td>
+                     </tr>
+                  </tbody>
+               </table>
+               
+               
+               </section>
+            
+            <section id="global_class_Normafwijking_Normafwijking">
+               <h4>   Normafwijking</h4>
+               
+               <table style="width: 100%;">
+                  <colgroup style="width: 30%;"></colgroup>
+                  <colgroup style="width: 70%;"></colgroup>
+                  <tbody>
+                     <tr>
+                        <th>Naam</th>
+                        <td>Normafwijking</td>
+                     </tr>
+                     <tr>
+                        <th>Herkomst</th>
+                        <td> </td>
+                     </tr>
+                     <tr>
+                        <th>Definitie</th>
+                        <td> </td>
+                     </tr>
+                     <tr>
+                        <th>Herkomst definitie</th>
+                        <td> </td>
+                     </tr>
+                     <tr>
+                        <th>Datum opname</th>
+                        <td> </td>
+                     </tr>
+                     <tr>
+                        <th>Unieke aanduiding</th>
+                        <td> </td>
+                     </tr>
+                     <tr>
+                        <th>Indicatie abstract object</th>
+                        <td>Nee</td>
+                     </tr>
+                  </tbody>
+               </table>
+               
+               <h5>Overzicht attributen  </h5>
+               
+               <table style="width: 100%;">
+                  <colgroup style="width: 30%;"></colgroup>
+                  <colgroup style="width: 50%;"></colgroup>
+                  <colgroup style="width: 10%;"></colgroup>
+                  <colgroup style="width: 10%;"></colgroup>
+                  <tbody>
+                     <tr>
+                        <th>Attribuutnaam</th>
+                        <th>Definitie</th>
+                        <th>Formaat</th>
+                        <th>Card</th>
+                     </tr>
+                     <tr>
+                        <td>
+                           <a class="link" href="#detail_attribute_Normafwijking_Normafwijking_Datumvaststellingnormafwijking">Datum vaststelling normafwijking</a>
+                           </td>
+                        <td></td>
+                        <td>
+                           <a class="external-link" href="https://docs.geostandaarden.nl/mim/def-st-mim-20220217/#primitive-datatypes">Date</a>
+                           </td>
+                        <td>1</td>
+                     </tr>
+                     <tr>
+                        <td>
+                           <a class="link" href="#detail_attribute_Normafwijking_Normafwijking_Datumvaststellingverwijtbaarheid">Datum vaststelling verwijtbaarheid</a>
+                           </td>
+                        <td></td>
+                        <td>
+                           <a class="external-link" href="https://docs.geostandaarden.nl/mim/def-st-mim-20220217/#primitive-datatypes">Date</a>
+                           </td>
+                        <td>1</td>
+                     </tr>
+                     <tr>
+                        <td>
+                           <a class="link" href="#detail_attribute_Normafwijking_Normafwijking_Motivatieverwijtbaarheid">Motivatie verwijtbaarheid</a>
+                           </td>
+                        <td></td>
+                        <td>
+                           <a class="external-link" href="https://docs.geostandaarden.nl/mim/def-st-mim-20220217/#primitive-datatypes">Character­String</a>
+                           </td>
+                        <td>1</td>
+                     </tr>
+                     <tr>
+                        <td>
+                           <a class="link" href="#detail_attribute_Normafwijking_Normafwijking_NormafwijkingID">Normafwijking ID</a>
+                           </td>
+                        <td></td>
+                        <td>
+                           <a class="external-link" href="https://docs.geostandaarden.nl/mim/def-st-mim-20220217/#primitive-datatypes">Character­String</a>
+                           </td>
+                        <td>1</td>
+                     </tr>
+                     <tr>
+                        <td>
+                           <a class="link" href="#detail_attribute_Normafwijking_Normafwijking_Recidive">Recidive</a>
+                           </td>
+                        <td></td>
+                        <td>
+                           <a class="link" href="#detail_class_Normafwijking_StdIndJN">Std­Ind­JN</a>
+                           </td>
+                        <td>1</td>
+                     </tr>
+                     <tr>
+                        <td>
+                           <a class="link" href="#detail_attribute_Normafwijking_Normafwijking_Typenormafwijking">Type normafwijking</a>
+                           </td>
+                        <td></td>
+                        <td>
+                           <a class="link" href="#detail_class_Normafwijking_TypeNormafwijking">Type­Normafwijking</a>
+                           </td>
+                        <td>1</td>
+                     </tr>
+                     <tr>
+                        <td>
+                           <a class="link" href="#detail_attribute_Normafwijking_Normafwijking_Verwijtbaarheid">Verwijtbaarheid</a>
+                           </td>
+                        <td></td>
+                        <td>
+                           <a class="link" href="#detail_class_Normafwijking_StdIndJN">Std­Ind­JN</a>
+                           </td>
+                        <td>1</td>
+                     </tr>
+                  </tbody>
+               </table>
+               
+               
+               <h5>Overzicht relaties  </h5>
+               
+               <table style="width: 100%;">
+                  <colgroup style="width: 50%;"></colgroup>
+                  <colgroup style="width: 50%;"></colgroup>
+                  <tbody>
+                     <tr>
+                        <th>Relatienaam met kardinaliteiten</th>
+                        <th>Definitie</th>
+                     </tr>
+                     <tr>
+                        <td>
+                           Normafwijking
+                           [ 0 .. 1 ]
+                           
+                           <a class="link" href="#detail_association_Normafwijking_Normafwijking_NormafwijkingleidttotMaatregel">Normafwijking leidt tot Maatregel</a>
+                           
+                           
+                           <a class="link" href="#global_class_Normafwijking_Maatregel">Maatregel</a>
+                           
+                           [ 1 ]
+                           </td>
+                        <td></td>
+                     </tr>
+                  </tbody>
+               </table>
+               
+               
+               </section>
+            
+            <section id="global_class_Normafwijking_Afwijkendemaatregel">
+               <h4>   Afwijkende maatregel</h4>
+               
+               <table style="width: 100%;">
+                  <colgroup style="width: 30%;"></colgroup>
+                  <colgroup style="width: 70%;"></colgroup>
+                  <tbody>
+                     <tr>
+                        <th>Naam</th>
+                        <td>Afwijkende maatregel</td>
+                     </tr>
+                     <tr>
+                        <th>Herkomst</th>
+                        <td> </td>
+                     </tr>
+                     <tr>
+                        <th>Definitie</th>
+                        <td> </td>
+                     </tr>
+                     <tr>
+                        <th>Herkomst definitie</th>
+                        <td> </td>
+                     </tr>
+                     <tr>
+                        <th>Datum opname</th>
+                        <td> </td>
+                     </tr>
+                     <tr>
+                        <th>Unieke aanduiding</th>
+                        <td> </td>
+                     </tr>
+                     <tr>
+                        <th>Indicatie abstract object</th>
+                        <td>Nee</td>
+                     </tr>
+                  </tbody>
+               </table>
+               
+               <h5>Overzicht attributen  </h5>
+               
+               <table style="width: 100%;">
+                  <colgroup style="width: 30%;"></colgroup>
+                  <colgroup style="width: 50%;"></colgroup>
+                  <colgroup style="width: 10%;"></colgroup>
+                  <colgroup style="width: 10%;"></colgroup>
+                  <tbody>
+                     <tr>
+                        <th>Attribuutnaam</th>
+                        <th>Definitie</th>
+                        <th>Formaat</th>
+                        <th>Card</th>
+                     </tr>
+                     <tr>
+                        <td>
+                           <a class="link" href="#detail_attribute_Normafwijking_Afwijkendemaatregel_Bedrag">Bedrag</a>
+                           </td>
+                        <td></td>
+                        <td>
+                           <a class="link" href="#global_class_Normafwijking_Geldbedrag">Geldbedrag</a>
+                           </td>
+                        <td>1</td>
+                     </tr>
+                     <tr>
+                        <td>
+                           <a class="link" href="#detail_attribute_Normafwijking_Afwijkendemaatregel_Coderedenafwijkingmaatregel">Code reden afwijking maatregel</a>
+                           </td>
+                        <td></td>
+                        <td>
+                           <a class="external-link" href="https://docs.geostandaarden.nl/mim/def-st-mim-20220217/#primitive-datatypes">Character­String</a>
+                           </td>
+                        <td>1</td>
+                     </tr>
+                     <tr>
+                        <td>
+                           <a class="link" href="#detail_attribute_Normafwijking_Afwijkendemaatregel_Motivatieafwijkingmaatregel">Motivatie afwijking maatregel</a>
+                           </td>
+                        <td></td>
+                        <td>
+                           <a class="external-link" href="https://docs.geostandaarden.nl/mim/def-st-mim-20220217/#primitive-datatypes">Character­String</a>
+                           </td>
+                        <td>1</td>
+                     </tr>
+                     <tr>
+                        <td>
+                           <a class="link" href="#detail_attribute_Normafwijking_Afwijkendemaatregel_Percentage">Percentage</a>
+                           </td>
+                        <td></td>
+                        <td>
+                           <a class="external-link" href="https://docs.geostandaarden.nl/mim/def-st-mim-20220217/#primitive-datatypes">Integer</a>
+                           </td>
+                        <td>1</td>
+                     </tr>
+                  </tbody>
+               </table>
+               
+               
+               <h5>Overzicht relaties  </h5>
+               
+               <table style="width: 100%;">
+                  <colgroup style="width: 50%;"></colgroup>
+                  <colgroup style="width: 50%;"></colgroup>
+                  <tbody>
+                     <tr>
+                        <th>Relatienaam met kardinaliteiten</th>
+                        <th>Definitie</th>
+                     </tr>
+                     <tr>
+                        <td>
+                           Afwijkende maatregel
+                           [ 1 ]
+                           
+                           <a class="link" href="#detail_association_Normafwijking_Afwijkendemaatregel_AfwijkendemaatregelrefereertnaarMaatregelopuitkering">Afwijkende maatregel refereert naar Maatregel op uitkering</a>
+                           
+                           
+                           <a class="link" href="#global_class_Normafwijking_Maatregelopuitkering">Maatregel op uitkering</a>
+                           
+                           [ 1 ]
+                           </td>
+                        <td></td>
+                     </tr>
+                     <tr>
+                        <td>
+                           Afwijkende maatregel
+                           is specialisatie van
+                           
+                           <a class="link" href="#global_class_Normafwijking_Maatregel">Maatregel</a>
+                           
+                           </td>
+                        <td></td>
+                     </tr>
+                  </tbody>
+               </table>
+               
+               
+               </section>
+            </section>
+         <section>
+            <h3>Gestructureerde datatypen   </h3>
+            
+            <section id="global_class_Normafwijking_Geldbedrag">
+               <h4>Gestructureerd datatype   Geldbedrag</h4>
+               
+               <table style="width: 100%;">
+                  <colgroup style="width: 30%;"></colgroup>
+                  <colgroup style="width: 70%;"></colgroup>
+                  <tbody>
+                     <tr>
+                        <th>Naam</th>
+                        <td>Geldbedrag</td>
+                     </tr>
+                     <tr>
+                        <th>Herkomst</th>
+                        <td> </td>
+                     </tr>
+                     <tr>
+                        <th>Definitie</th>
+                        <td> </td>
+                     </tr>
+                     <tr>
+                        <th>Herkomst definitie</th>
+                        <td> </td>
+                     </tr>
+                     <tr>
+                        <th>Datum opname</th>
+                        <td> </td>
+                     </tr>
+                     <tr>
+                        <th>Lengte</th>
+                        <td> </td>
+                     </tr>
+                     <tr>
+                        <th>Patroon</th>
+                        <td> </td>
+                     </tr>
+                  </tbody>
+               </table>
+               
+               <section>
+                  <h5>Overzicht data elementen   </h5>
+                  
+                  <table style="width: 100%;">
+                     <colgroup style="width: 30%;"></colgroup>
+                     <colgroup style="width: 50%;"></colgroup>
+                     <colgroup style="width: 10%;"></colgroup>
+                     <colgroup style="width: 10%;"></colgroup>
+                     <tbody>
+                        <tr>
+                           <th>Data element</th>
+                           <th>Definitie</th>
+                           <th>Formaat</th>
+                           <th>Card</th>
+                        </tr>
+                        <tr>
+                           <td>
+                              <a class="link" href="#detail_attribute_Normafwijking_Geldbedrag_Som">Som</a>
+                              </td>
+                           <td></td>
+                           <td>
+                              <a class="external-link" href="https://docs.geostandaarden.nl/mim/def-st-mim-20220217/#primitive-datatypes">Real</a>
+                              </td>
+                           <td>1</td>
+                        </tr>
+                        <tr>
+                           <td>
+                              <a class="link" href="#detail_attribute_Normafwijking_Geldbedrag_Valuta">Valuta</a>
+                              </td>
+                           <td></td>
+                           <td>
+                              <a class="external-link" href="https://docs.geostandaarden.nl/mim/def-st-mim-20220217/#primitive-datatypes">Character­String</a>
+                              </td>
+                           <td>1</td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  </section>
+               </section>
+            </section>
+         <section>
+            <h3>Enumeraties   </h3>
+            
+            <table style="width: 100%;">
+               <colgroup style="width: 30%;"></colgroup>
+               <colgroup style="width: 70%;"></colgroup>
+               <tbody>
+                  <tr>
+                     <th><a class="link" href="#detail_class_Normafwijking_BurgerlijkeStaat">Burgerlijke­Staat</a></th>
+                     <td></td>
+                  </tr>
+                  <tr>
+                     <th><a class="link" href="#detail_class_Normafwijking_CdBrpGegevensGeheim">Cd­Brp­Gegevens­Geheim</a></th>
+                     <td></td>
+                  </tr>
+                  <tr>
+                     <th><a class="link" href="#detail_class_Normafwijking_TypeNormafwijking">Type­Normafwijking</a></th>
+                     <td></td>
+                  </tr>
+                  <tr>
+                     <th><a class="link" href="#detail_class_Normafwijking_Geslacht">Geslacht</a></th>
+                     <td></td>
+                  </tr>
+                  <tr>
+                     <th><a class="link" href="#detail_class_Normafwijking_AanduidingNaamgebruik">Aanduiding­Naamgebruik</a></th>
+                     <td></td>
+                  </tr>
+                  <tr>
+                     <th><a class="link" href="#detail_class_Normafwijking_CodeRedenMaatregel">Code­Reden­Maatregel</a></th>
+                     <td></td>
+                  </tr>
+                  <tr>
+                     <th><a class="link" href="#detail_class_Normafwijking_CdAdellijkeTitelPredikaatNed">Cd­Adellijke­Titel­Predikaat­Ned</a></th>
+                     <td></td>
+                  </tr>
+                  <tr>
+                     <th><a class="link" href="#detail_class_Normafwijking_StdIndJN">Std­Ind­JN</a></th>
+                     <td></td>
+                  </tr>
+                  <tr>
+                     <th><a class="link" href="#detail_class_Normafwijking_Predicaat">Predicaat</a></th>
+                     <td></td>
+                  </tr>
+                  <tr>
+                     <th><a class="link" href="#detail_class_Normafwijking_TypeMaatregel">Type­Maatregel</a></th>
+                     <td></td>
+                  </tr>
+               </tbody>
+            </table>
+            </section>
+         <section>
+            <h3>Attribuut- en relatiesoort details  </h3>
+            
+            <section>
+               <h4>Objecttype details  </h4>
+               
+               <section id="detail_class_Normafwijking_Maatregelopuitkering">
+                  <h5>   Maatregel op uitkering</h5>
+                  
+                  <section id="detail_attribute_Normafwijking_Maatregelopuitkering_Coderedenmaatregel">
+                     <h6>Attribuutsoort details  <a href="#global_class_Normafwijking_Maatregelopuitkering">Maatregel op uitkering</a> Code reden maatregel</h6>
+                     
+                     <table style="width: 100%;">
+                        <colgroup style="width: 30%;"></colgroup>
+                        <colgroup style="width: 70%;"></colgroup>
+                        <tbody>
+                           <tr>
+                              <th>Naam</th>
+                              <td>Code reden maatregel</td>
+                           </tr>
+                           <tr>
+                              <th>Herkomst</th>
+                              <td> </td>
+                           </tr>
+                           <tr>
+                              <th>Definitie</th>
+                              <td> </td>
+                           </tr>
+                           <tr>
+                              <th>Herkomst definitie</th>
+                              <td> </td>
+                           </tr>
+                           <tr>
+                              <th>Datum opname</th>
+                              <td> </td>
+                           </tr>
+                           <tr>
+                              <th>Mogelijk geen waarde</th>
+                              <td> </td>
+                           </tr>
+                           <tr>
+                              <th>Indicatie kardinaliteit</th>
+                              <td>1</td>
+                           </tr>
+                           <tr>
+                              <th>Indicatie authentiek</th>
+                              <td>  </td>
+                           </tr>
+                           <tr>
+                              <th>Lengte</th>
+                              <td> </td>
+                           </tr>
+                           <tr>
+                              <th>Formaat</th>
+                              <td>
+                                 <a class="link" href="#detail_class_Normafwijking_CodeRedenMaatregel">Code­Reden­Maatregel</a>
+                                 </td>
+                           </tr>
+                           <tr>
+                              <th>Patroon</th>
+                              <td> </td>
+                           </tr>
+                           <tr>
+                              <th>Indicatie afleidbaar</th>
+                              <td> </td>
+                           </tr>
+                           <tr>
+                              <th>Waarde afleidbaar</th>
+                              <td>Nee</td>
+                           </tr>
+                        </tbody>
+                     </table>
+                     </section>
+                  
+                  <section id="detail_attribute_Normafwijking_Maatregelopuitkering_Motivatieverminderingmaatregel">
+                     <h6>Attribuutsoort details  <a href="#global_class_Normafwijking_Maatregelopuitkering">Maatregel op uitkering</a> Motivatie vermindering maatregel</h6>
+                     
+                     <table style="width: 100%;">
+                        <colgroup style="width: 30%;"></colgroup>
+                        <colgroup style="width: 70%;"></colgroup>
+                        <tbody>
+                           <tr>
+                              <th>Naam</th>
+                              <td>Motivatie vermindering maatregel</td>
+                           </tr>
+                           <tr>
+                              <th>Herkomst</th>
+                              <td> </td>
+                           </tr>
+                           <tr>
+                              <th>Definitie</th>
+                              <td> </td>
+                           </tr>
+                           <tr>
+                              <th>Herkomst definitie</th>
+                              <td> </td>
+                           </tr>
+                           <tr>
+                              <th>Datum opname</th>
+                              <td> </td>
+                           </tr>
+                           <tr>
+                              <th>Mogelijk geen waarde</th>
+                              <td> </td>
+                           </tr>
+                           <tr>
+                              <th>Indicatie kardinaliteit</th>
+                              <td>1</td>
+                           </tr>
+                           <tr>
+                              <th>Indicatie authentiek</th>
+                              <td>  </td>
+                           </tr>
+                           <tr>
+                              <th>Lengte</th>
+                              <td> </td>
+                           </tr>
+                           <tr>
+                              <th>Formaat</th>
+                              <td>
+                                 <a class="external-link" href="https://docs.geostandaarden.nl/mim/def-st-mim-20220217/#primitive-datatypes">Character­String</a>
+                                 </td>
+                           </tr>
+                           <tr>
+                              <th>Patroon</th>
+                              <td> </td>
+                           </tr>
+                           <tr>
+                              <th>Indicatie afleidbaar</th>
+                              <td> </td>
+                           </tr>
+                           <tr>
+                              <th>Waarde afleidbaar</th>
+                              <td>Nee</td>
+                           </tr>
+                        </tbody>
+                     </table>
+                     </section>
+                  
+                  <section id="detail_attribute_Normafwijking_Maatregelopuitkering_Percentagemaatregel">
+                     <h6>Attribuutsoort details  <a href="#global_class_Normafwijking_Maatregelopuitkering">Maatregel op uitkering</a> Percentage maatregel</h6>
+                     
+                     <table style="width: 100%;">
+                        <colgroup style="width: 30%;"></colgroup>
+                        <colgroup style="width: 70%;"></colgroup>
+                        <tbody>
+                           <tr>
+                              <th>Naam</th>
+                              <td>Percentage maatregel</td>
+                           </tr>
+                           <tr>
+                              <th>Herkomst</th>
+                              <td> </td>
+                           </tr>
+                           <tr>
+                              <th>Definitie</th>
+                              <td> </td>
+                           </tr>
+                           <tr>
+                              <th>Herkomst definitie</th>
+                              <td> </td>
+                           </tr>
+                           <tr>
+                              <th>Datum opname</th>
+                              <td> </td>
+                           </tr>
+                           <tr>
+                              <th>Mogelijk geen waarde</th>
+                              <td> </td>
+                           </tr>
+                           <tr>
+                              <th>Indicatie kardinaliteit</th>
+                              <td>1</td>
+                           </tr>
+                           <tr>
+                              <th>Indicatie authentiek</th>
+                              <td>  </td>
+                           </tr>
+                           <tr>
+                              <th>Lengte</th>
+                              <td> </td>
+                           </tr>
+                           <tr>
+                              <th>Formaat</th>
+                              <td>
+                                 <a class="external-link" href="https://docs.geostandaarden.nl/mim/def-st-mim-20220217/#primitive-datatypes">Integer</a>
+                                 </td>
+                           </tr>
+                           <tr>
+                              <th>Patroon</th>
+                              <td> </td>
+                           </tr>
+                           <tr>
+                              <th>Indicatie afleidbaar</th>
+                              <td> </td>
+                           </tr>
+                           <tr>
+                              <th>Waarde afleidbaar</th>
+                              <td>Nee</td>
+                           </tr>
+                        </tbody>
+                     </table>
+                     </section>
+                  </section>
+               
+               <section id="detail_class_Normafwijking_Boete">
+                  <h5>   Boete</h5>
+                  
+                  <section id="detail_attribute_Normafwijking_Boete_Bedragboete">
+                     <h6>Attribuutsoort details  <a href="#global_class_Normafwijking_Boete">Boete</a> Bedrag boete</h6>
+                     
+                     <table style="width: 100%;">
+                        <colgroup style="width: 30%;"></colgroup>
+                        <colgroup style="width: 70%;"></colgroup>
+                        <tbody>
+                           <tr>
+                              <th>Naam</th>
+                              <td>Bedrag boete</td>
+                           </tr>
+                           <tr>
+                              <th>Herkomst</th>
+                              <td> </td>
+                           </tr>
+                           <tr>
+                              <th>Definitie</th>
+                              <td> </td>
+                           </tr>
+                           <tr>
+                              <th>Herkomst definitie</th>
+                              <td> </td>
+                           </tr>
+                           <tr>
+                              <th>Datum opname</th>
+                              <td> </td>
+                           </tr>
+                           <tr>
+                              <th>Mogelijk geen waarde</th>
+                              <td> </td>
+                           </tr>
+                           <tr>
+                              <th>Indicatie kardinaliteit</th>
+                              <td>1</td>
+                           </tr>
+                           <tr>
+                              <th>Indicatie authentiek</th>
+                              <td>  </td>
+                           </tr>
+                           <tr>
+                              <th>Lengte</th>
+                              <td> </td>
+                           </tr>
+                           <tr>
+                              <th>Formaat</th>
+                              <td>
+                                 <a class="link" href="#detail_class_Normafwijking_Geldbedrag">Geldbedrag</a>
+                                 </td>
+                           </tr>
+                           <tr>
+                              <th>Patroon</th>
+                              <td> </td>
+                           </tr>
+                           <tr>
+                              <th>Indicatie afleidbaar</th>
+                              <td> </td>
+                           </tr>
+                           <tr>
+                              <th>Waarde afleidbaar</th>
+                              <td>Nee</td>
+                           </tr>
+                        </tbody>
+                     </table>
+                     </section>
+                  
+                  <section id="detail_attribute_Normafwijking_Boete_Boetevorm">
+                     <h6>Attribuutsoort details  <a href="#global_class_Normafwijking_Boete">Boete</a> Boetevorm</h6>
+                     
+                     <table style="width: 100%;">
+                        <colgroup style="width: 30%;"></colgroup>
+                        <colgroup style="width: 70%;"></colgroup>
+                        <tbody>
+                           <tr>
+                              <th>Naam</th>
+                              <td>Boetevorm</td>
+                           </tr>
+                           <tr>
+                              <th>Herkomst</th>
+                              <td> </td>
+                           </tr>
+                           <tr>
+                              <th>Definitie</th>
+                              <td> </td>
+                           </tr>
+                           <tr>
+                              <th>Herkomst definitie</th>
+                              <td> </td>
+                           </tr>
+                           <tr>
+                              <th>Datum opname</th>
+                              <td> </td>
+                           </tr>
+                           <tr>
+                              <th>Mogelijk geen waarde</th>
+                              <td> </td>
+                           </tr>
+                           <tr>
+                              <th>Indicatie kardinaliteit</th>
+                              <td>1</td>
+                           </tr>
+                           <tr>
+                              <th>Indicatie authentiek</th>
+                              <td>  </td>
+                           </tr>
+                           <tr>
+                              <th>Lengte</th>
+                              <td> </td>
+                           </tr>
+                           <tr>
+                              <th>Formaat</th>
+                              <td>
+                                 <a class="external-link" href="https://docs.geostandaarden.nl/mim/def-st-mim-20220217/#primitive-datatypes">Character­String</a>
+                                 </td>
+                           </tr>
+                           <tr>
+                              <th>Patroon</th>
+                              <td> </td>
+                           </tr>
+                           <tr>
+                              <th>Indicatie afleidbaar</th>
+                              <td> </td>
+                           </tr>
+                           <tr>
+                              <th>Waarde afleidbaar</th>
+                              <td>Nee</td>
+                           </tr>
+                        </tbody>
+                     </table>
+                     </section>
+                  
+                  <section id="detail_attribute_Normafwijking_Boete_Redenboete">
+                     <h6>Attribuutsoort details  <a href="#global_class_Normafwijking_Boete">Boete</a> Reden boete</h6>
+                     
+                     <table style="width: 100%;">
+                        <colgroup style="width: 30%;"></colgroup>
+                        <colgroup style="width: 70%;"></colgroup>
+                        <tbody>
+                           <tr>
+                              <th>Naam</th>
+                              <td>Reden boete</td>
+                           </tr>
+                           <tr>
+                              <th>Herkomst</th>
+                              <td> </td>
+                           </tr>
+                           <tr>
+                              <th>Definitie</th>
+                              <td> </td>
+                           </tr>
+                           <tr>
+                              <th>Herkomst definitie</th>
+                              <td> </td>
+                           </tr>
+                           <tr>
+                              <th>Datum opname</th>
+                              <td> </td>
+                           </tr>
+                           <tr>
+                              <th>Mogelijk geen waarde</th>
+                              <td> </td>
+                           </tr>
+                           <tr>
+                              <th>Indicatie kardinaliteit</th>
+                              <td>1</td>
+                           </tr>
+                           <tr>
+                              <th>Indicatie authentiek</th>
+                              <td>  </td>
+                           </tr>
+                           <tr>
+                              <th>Lengte</th>
+                              <td> </td>
+                           </tr>
+                           <tr>
+                              <th>Formaat</th>
+                              <td>
+                                 <a class="external-link" href="https://docs.geostandaarden.nl/mim/def-st-mim-20220217/#primitive-datatypes">Character­String</a>
+                                 </td>
+                           </tr>
+                           <tr>
+                              <th>Patroon</th>
+                              <td> </td>
+                           </tr>
+                           <tr>
+                              <th>Indicatie afleidbaar</th>
+                              <td> </td>
+                           </tr>
+                           <tr>
+                              <th>Waarde afleidbaar</th>
+                              <td>Nee</td>
+                           </tr>
+                        </tbody>
+                     </table>
+                     </section>
+                  
+                  <section id="detail_attribute_Normafwijking_Boete_Voorwaardeboete">
+                     <h6>Attribuutsoort details  <a href="#global_class_Normafwijking_Boete">Boete</a> Voorwaarde boete</h6>
+                     
+                     <table style="width: 100%;">
+                        <colgroup style="width: 30%;"></colgroup>
+                        <colgroup style="width: 70%;"></colgroup>
+                        <tbody>
+                           <tr>
+                              <th>Naam</th>
+                              <td>Voorwaarde boete</td>
+                           </tr>
+                           <tr>
+                              <th>Herkomst</th>
+                              <td> </td>
+                           </tr>
+                           <tr>
+                              <th>Definitie</th>
+                              <td> </td>
+                           </tr>
+                           <tr>
+                              <th>Herkomst definitie</th>
+                              <td> </td>
+                           </tr>
+                           <tr>
+                              <th>Datum opname</th>
+                              <td> </td>
+                           </tr>
+                           <tr>
+                              <th>Mogelijk geen waarde</th>
+                              <td> </td>
+                           </tr>
+                           <tr>
+                              <th>Indicatie kardinaliteit</th>
+                              <td>1</td>
+                           </tr>
+                           <tr>
+                              <th>Indicatie authentiek</th>
+                              <td>  </td>
+                           </tr>
+                           <tr>
+                              <th>Lengte</th>
+                              <td> </td>
+                           </tr>
+                           <tr>
+                              <th>Formaat</th>
+                              <td>
+                                 <a class="external-link" href="https://docs.geostandaarden.nl/mim/def-st-mim-20220217/#primitive-datatypes">Character­String</a>
+                                 </td>
+                           </tr>
+                           <tr>
+                              <th>Patroon</th>
+                              <td> </td>
+                           </tr>
+                           <tr>
+                              <th>Indicatie afleidbaar</th>
+                              <td> </td>
+                           </tr>
+                           <tr>
+                              <th>Waarde afleidbaar</th>
+                              <td>Nee</td>
+                           </tr>
+                        </tbody>
+                     </table>
+                     </section>
+                  </section>
+               
+               <section id="detail_class_Normafwijking_Maatregel">
+                  <h5>   Maatregel</h5>
+                  
+                  <section id="detail_attribute_Normafwijking_Maatregel_Datumaanvangmaatregel">
+                     <h6>Attribuutsoort details  <a href="#global_class_Normafwijking_Maatregel">Maatregel</a> Datum aanvang maatregel</h6>
+                     
+                     <table style="width: 100%;">
+                        <colgroup style="width: 30%;"></colgroup>
+                        <colgroup style="width: 70%;"></colgroup>
+                        <tbody>
+                           <tr>
+                              <th>Naam</th>
+                              <td>Datum aanvang maatregel</td>
+                           </tr>
+                           <tr>
+                              <th>Herkomst</th>
+                              <td> </td>
+                           </tr>
+                           <tr>
+                              <th>Definitie</th>
+                              <td> </td>
+                           </tr>
+                           <tr>
+                              <th>Herkomst definitie</th>
+                              <td> </td>
+                           </tr>
+                           <tr>
+                              <th>Datum opname</th>
+                              <td> </td>
+                           </tr>
+                           <tr>
+                              <th>Mogelijk geen waarde</th>
+                              <td> </td>
+                           </tr>
+                           <tr>
+                              <th>Indicatie kardinaliteit</th>
+                              <td>1</td>
+                           </tr>
+                           <tr>
+                              <th>Indicatie authentiek</th>
+                              <td>  </td>
+                           </tr>
+                           <tr>
+                              <th>Lengte</th>
+                              <td> </td>
+                           </tr>
+                           <tr>
+                              <th>Formaat</th>
+                              <td>
+                                 <a class="external-link" href="https://docs.geostandaarden.nl/mim/def-st-mim-20220217/#primitive-datatypes">Date</a>
+                                 </td>
+                           </tr>
+                           <tr>
+                              <th>Patroon</th>
+                              <td> </td>
+                           </tr>
+                           <tr>
+                              <th>Indicatie afleidbaar</th>
+                              <td> </td>
+                           </tr>
+                           <tr>
+                              <th>Waarde afleidbaar</th>
+                              <td>Nee</td>
+                           </tr>
+                        </tbody>
+                     </table>
+                     </section>
+                  
+                  <section id="detail_attribute_Normafwijking_Maatregel_Datumeindemaatregel">
+                     <h6>Attribuutsoort details  <a href="#global_class_Normafwijking_Maatregel">Maatregel</a> Datum einde maatregel</h6>
+                     
+                     <table style="width: 100%;">
+                        <colgroup style="width: 30%;"></colgroup>
+                        <colgroup style="width: 70%;"></colgroup>
+                        <tbody>
+                           <tr>
+                              <th>Naam</th>
+                              <td>Datum einde maatregel</td>
+                           </tr>
+                           <tr>
+                              <th>Herkomst</th>
+                              <td> </td>
+                           </tr>
+                           <tr>
+                              <th>Definitie</th>
+                              <td> </td>
+                           </tr>
+                           <tr>
+                              <th>Herkomst definitie</th>
+                              <td> </td>
+                           </tr>
+                           <tr>
+                              <th>Datum opname</th>
+                              <td> </td>
+                           </tr>
+                           <tr>
+                              <th>Mogelijk geen waarde</th>
+                              <td> </td>
+                           </tr>
+                           <tr>
+                              <th>Indicatie kardinaliteit</th>
+                              <td>1</td>
+                           </tr>
+                           <tr>
+                              <th>Indicatie authentiek</th>
+                              <td>  </td>
+                           </tr>
+                           <tr>
+                              <th>Lengte</th>
+                              <td> </td>
+                           </tr>
+                           <tr>
+                              <th>Formaat</th>
+                              <td>
+                                 <a class="external-link" href="https://docs.geostandaarden.nl/mim/def-st-mim-20220217/#primitive-datatypes">Date</a>
+                                 </td>
+                           </tr>
+                           <tr>
+                              <th>Patroon</th>
+                              <td> </td>
+                           </tr>
+                           <tr>
+                              <th>Indicatie afleidbaar</th>
+                              <td> </td>
+                           </tr>
+                           <tr>
+                              <th>Waarde afleidbaar</th>
+                              <td>Nee</td>
+                           </tr>
+                        </tbody>
+                     </table>
+                     </section>
+                  
+                  <section id="detail_attribute_Normafwijking_Maatregel_Datumvaststellingmaatregel">
+                     <h6>Attribuutsoort details  <a href="#global_class_Normafwijking_Maatregel">Maatregel</a> Datum vaststelling maatregel</h6>
+                     
+                     <table style="width: 100%;">
+                        <colgroup style="width: 30%;"></colgroup>
+                        <colgroup style="width: 70%;"></colgroup>
+                        <tbody>
+                           <tr>
+                              <th>Naam</th>
+                              <td>Datum vaststelling maatregel</td>
+                           </tr>
+                           <tr>
+                              <th>Herkomst</th>
+                              <td> </td>
+                           </tr>
+                           <tr>
+                              <th>Definitie</th>
+                              <td> </td>
+                           </tr>
+                           <tr>
+                              <th>Herkomst definitie</th>
+                              <td> </td>
+                           </tr>
+                           <tr>
+                              <th>Datum opname</th>
+                              <td> </td>
+                           </tr>
+                           <tr>
+                              <th>Mogelijk geen waarde</th>
+                              <td> </td>
+                           </tr>
+                           <tr>
+                              <th>Indicatie kardinaliteit</th>
+                              <td>1</td>
+                           </tr>
+                           <tr>
+                              <th>Indicatie authentiek</th>
+                              <td>  </td>
+                           </tr>
+                           <tr>
+                              <th>Lengte</th>
+                              <td> </td>
+                           </tr>
+                           <tr>
+                              <th>Formaat</th>
+                              <td>
+                                 <a class="external-link" href="https://docs.geostandaarden.nl/mim/def-st-mim-20220217/#primitive-datatypes">Date</a>
+                                 </td>
+                           </tr>
+                           <tr>
+                              <th>Patroon</th>
+                              <td> </td>
+                           </tr>
+                           <tr>
+                              <th>Indicatie afleidbaar</th>
+                              <td> </td>
+                           </tr>
+                           <tr>
+                              <th>Waarde afleidbaar</th>
+                              <td>Nee</td>
+                           </tr>
+                        </tbody>
+                     </table>
+                     </section>
+                  
+                  <section id="detail_attribute_Normafwijking_Maatregel_MaatregelID">
+                     <h6>Attribuutsoort details  <a href="#global_class_Normafwijking_Maatregel">Maatregel</a> Maatregel ID</h6>
+                     
+                     <table style="width: 100%;">
+                        <colgroup style="width: 30%;"></colgroup>
+                        <colgroup style="width: 70%;"></colgroup>
+                        <tbody>
+                           <tr>
+                              <th>Naam</th>
+                              <td>Maatregel ID</td>
+                           </tr>
+                           <tr>
+                              <th>Herkomst</th>
+                              <td> </td>
+                           </tr>
+                           <tr>
+                              <th>Definitie</th>
+                              <td> </td>
+                           </tr>
+                           <tr>
+                              <th>Herkomst definitie</th>
+                              <td> </td>
+                           </tr>
+                           <tr>
+                              <th>Datum opname</th>
+                              <td> </td>
+                           </tr>
+                           <tr>
+                              <th>Mogelijk geen waarde</th>
+                              <td> </td>
+                           </tr>
+                           <tr>
+                              <th>Indicatie kardinaliteit</th>
+                              <td>1</td>
+                           </tr>
+                           <tr>
+                              <th>Indicatie authentiek</th>
+                              <td>  </td>
+                           </tr>
+                           <tr>
+                              <th>Lengte</th>
+                              <td> </td>
+                           </tr>
+                           <tr>
+                              <th>Formaat</th>
+                              <td>
+                                 <a class="external-link" href="https://docs.geostandaarden.nl/mim/def-st-mim-20220217/#primitive-datatypes">Character­String</a>
+                                 </td>
+                           </tr>
+                           <tr>
+                              <th>Patroon</th>
+                              <td> </td>
+                           </tr>
+                           <tr>
+                              <th>Indicatie afleidbaar</th>
+                              <td> </td>
+                           </tr>
+                           <tr>
+                              <th>Waarde afleidbaar</th>
+                              <td>Nee</td>
+                           </tr>
+                        </tbody>
+                     </table>
+                     </section>
+                  
+                  <section id="detail_attribute_Normafwijking_Maatregel_Typemaatregel">
+                     <h6>Attribuutsoort details  <a href="#global_class_Normafwijking_Maatregel">Maatregel</a> Type maatregel</h6>
+                     
+                     <table style="width: 100%;">
+                        <colgroup style="width: 30%;"></colgroup>
+                        <colgroup style="width: 70%;"></colgroup>
+                        <tbody>
+                           <tr>
+                              <th>Naam</th>
+                              <td>Type maatregel</td>
+                           </tr>
+                           <tr>
+                              <th>Herkomst</th>
+                              <td> </td>
+                           </tr>
+                           <tr>
+                              <th>Definitie</th>
+                              <td> </td>
+                           </tr>
+                           <tr>
+                              <th>Herkomst definitie</th>
+                              <td> </td>
+                           </tr>
+                           <tr>
+                              <th>Datum opname</th>
+                              <td> </td>
+                           </tr>
+                           <tr>
+                              <th>Mogelijk geen waarde</th>
+                              <td> </td>
+                           </tr>
+                           <tr>
+                              <th>Indicatie kardinaliteit</th>
+                              <td>1</td>
+                           </tr>
+                           <tr>
+                              <th>Indicatie authentiek</th>
+                              <td>  </td>
+                           </tr>
+                           <tr>
+                              <th>Lengte</th>
+                              <td> </td>
+                           </tr>
+                           <tr>
+                              <th>Formaat</th>
+                              <td>
+                                 <a class="link" href="#detail_class_Normafwijking_TypeMaatregel">Type­Maatregel</a>
+                                 </td>
+                           </tr>
+                           <tr>
+                              <th>Patroon</th>
+                              <td> </td>
+                           </tr>
+                           <tr>
+                              <th>Indicatie afleidbaar</th>
+                              <td> </td>
+                           </tr>
+                           <tr>
+                              <th>Waarde afleidbaar</th>
+                              <td>Nee</td>
+                           </tr>
+                        </tbody>
+                     </table>
+                     </section>
+                  </section>
+               
+               <section id="detail_class_Normafwijking_Normafwijking">
+                  <h5>   Normafwijking</h5>
+                  
+                  <section id="detail_attribute_Normafwijking_Normafwijking_Datumvaststellingnormafwijking">
+                     <h6>Attribuutsoort details  <a href="#global_class_Normafwijking_Normafwijking">Normafwijking</a> Datum vaststelling normafwijking</h6>
+                     
+                     <table style="width: 100%;">
+                        <colgroup style="width: 30%;"></colgroup>
+                        <colgroup style="width: 70%;"></colgroup>
+                        <tbody>
+                           <tr>
+                              <th>Naam</th>
+                              <td>Datum vaststelling normafwijking</td>
+                           </tr>
+                           <tr>
+                              <th>Herkomst</th>
+                              <td> </td>
+                           </tr>
+                           <tr>
+                              <th>Definitie</th>
+                              <td> </td>
+                           </tr>
+                           <tr>
+                              <th>Herkomst definitie</th>
+                              <td> </td>
+                           </tr>
+                           <tr>
+                              <th>Datum opname</th>
+                              <td> </td>
+                           </tr>
+                           <tr>
+                              <th>Mogelijk geen waarde</th>
+                              <td> </td>
+                           </tr>
+                           <tr>
+                              <th>Indicatie kardinaliteit</th>
+                              <td>1</td>
+                           </tr>
+                           <tr>
+                              <th>Indicatie authentiek</th>
+                              <td>  </td>
+                           </tr>
+                           <tr>
+                              <th>Lengte</th>
+                              <td> </td>
+                           </tr>
+                           <tr>
+                              <th>Formaat</th>
+                              <td>
+                                 <a class="external-link" href="https://docs.geostandaarden.nl/mim/def-st-mim-20220217/#primitive-datatypes">Date</a>
+                                 </td>
+                           </tr>
+                           <tr>
+                              <th>Patroon</th>
+                              <td> </td>
+                           </tr>
+                           <tr>
+                              <th>Indicatie afleidbaar</th>
+                              <td> </td>
+                           </tr>
+                           <tr>
+                              <th>Waarde afleidbaar</th>
+                              <td>Nee</td>
+                           </tr>
+                        </tbody>
+                     </table>
+                     </section>
+                  
+                  <section id="detail_attribute_Normafwijking_Normafwijking_Datumvaststellingverwijtbaarheid">
+                     <h6>Attribuutsoort details  <a href="#global_class_Normafwijking_Normafwijking">Normafwijking</a> Datum vaststelling verwijtbaarheid</h6>
+                     
+                     <table style="width: 100%;">
+                        <colgroup style="width: 30%;"></colgroup>
+                        <colgroup style="width: 70%;"></colgroup>
+                        <tbody>
+                           <tr>
+                              <th>Naam</th>
+                              <td>Datum vaststelling verwijtbaarheid</td>
+                           </tr>
+                           <tr>
+                              <th>Herkomst</th>
+                              <td> </td>
+                           </tr>
+                           <tr>
+                              <th>Definitie</th>
+                              <td> </td>
+                           </tr>
+                           <tr>
+                              <th>Herkomst definitie</th>
+                              <td> </td>
+                           </tr>
+                           <tr>
+                              <th>Datum opname</th>
+                              <td> </td>
+                           </tr>
+                           <tr>
+                              <th>Mogelijk geen waarde</th>
+                              <td> </td>
+                           </tr>
+                           <tr>
+                              <th>Indicatie kardinaliteit</th>
+                              <td>1</td>
+                           </tr>
+                           <tr>
+                              <th>Indicatie authentiek</th>
+                              <td>  </td>
+                           </tr>
+                           <tr>
+                              <th>Lengte</th>
+                              <td> </td>
+                           </tr>
+                           <tr>
+                              <th>Formaat</th>
+                              <td>
+                                 <a class="external-link" href="https://docs.geostandaarden.nl/mim/def-st-mim-20220217/#primitive-datatypes">Date</a>
+                                 </td>
+                           </tr>
+                           <tr>
+                              <th>Patroon</th>
+                              <td> </td>
+                           </tr>
+                           <tr>
+                              <th>Indicatie afleidbaar</th>
+                              <td> </td>
+                           </tr>
+                           <tr>
+                              <th>Waarde afleidbaar</th>
+                              <td>Nee</td>
+                           </tr>
+                        </tbody>
+                     </table>
+                     </section>
+                  
+                  <section id="detail_attribute_Normafwijking_Normafwijking_Motivatieverwijtbaarheid">
+                     <h6>Attribuutsoort details  <a href="#global_class_Normafwijking_Normafwijking">Normafwijking</a> Motivatie verwijtbaarheid</h6>
+                     
+                     <table style="width: 100%;">
+                        <colgroup style="width: 30%;"></colgroup>
+                        <colgroup style="width: 70%;"></colgroup>
+                        <tbody>
+                           <tr>
+                              <th>Naam</th>
+                              <td>Motivatie verwijtbaarheid</td>
+                           </tr>
+                           <tr>
+                              <th>Herkomst</th>
+                              <td> </td>
+                           </tr>
+                           <tr>
+                              <th>Definitie</th>
+                              <td> </td>
+                           </tr>
+                           <tr>
+                              <th>Herkomst definitie</th>
+                              <td> </td>
+                           </tr>
+                           <tr>
+                              <th>Datum opname</th>
+                              <td> </td>
+                           </tr>
+                           <tr>
+                              <th>Mogelijk geen waarde</th>
+                              <td> </td>
+                           </tr>
+                           <tr>
+                              <th>Indicatie kardinaliteit</th>
+                              <td>1</td>
+                           </tr>
+                           <tr>
+                              <th>Indicatie authentiek</th>
+                              <td>  </td>
+                           </tr>
+                           <tr>
+                              <th>Lengte</th>
+                              <td> </td>
+                           </tr>
+                           <tr>
+                              <th>Formaat</th>
+                              <td>
+                                 <a class="external-link" href="https://docs.geostandaarden.nl/mim/def-st-mim-20220217/#primitive-datatypes">Character­String</a>
+                                 </td>
+                           </tr>
+                           <tr>
+                              <th>Patroon</th>
+                              <td> </td>
+                           </tr>
+                           <tr>
+                              <th>Indicatie afleidbaar</th>
+                              <td> </td>
+                           </tr>
+                           <tr>
+                              <th>Waarde afleidbaar</th>
+                              <td>Nee</td>
+                           </tr>
+                        </tbody>
+                     </table>
+                     </section>
+                  
+                  <section id="detail_attribute_Normafwijking_Normafwijking_NormafwijkingID">
+                     <h6>Attribuutsoort details  <a href="#global_class_Normafwijking_Normafwijking">Normafwijking</a> Normafwijking ID</h6>
+                     
+                     <table style="width: 100%;">
+                        <colgroup style="width: 30%;"></colgroup>
+                        <colgroup style="width: 70%;"></colgroup>
+                        <tbody>
+                           <tr>
+                              <th>Naam</th>
+                              <td>Normafwijking ID</td>
+                           </tr>
+                           <tr>
+                              <th>Herkomst</th>
+                              <td> </td>
+                           </tr>
+                           <tr>
+                              <th>Definitie</th>
+                              <td> </td>
+                           </tr>
+                           <tr>
+                              <th>Herkomst definitie</th>
+                              <td> </td>
+                           </tr>
+                           <tr>
+                              <th>Datum opname</th>
+                              <td> </td>
+                           </tr>
+                           <tr>
+                              <th>Mogelijk geen waarde</th>
+                              <td> </td>
+                           </tr>
+                           <tr>
+                              <th>Indicatie kardinaliteit</th>
+                              <td>1</td>
+                           </tr>
+                           <tr>
+                              <th>Indicatie authentiek</th>
+                              <td>  </td>
+                           </tr>
+                           <tr>
+                              <th>Lengte</th>
+                              <td> </td>
+                           </tr>
+                           <tr>
+                              <th>Formaat</th>
+                              <td>
+                                 <a class="external-link" href="https://docs.geostandaarden.nl/mim/def-st-mim-20220217/#primitive-datatypes">Character­String</a>
+                                 </td>
+                           </tr>
+                           <tr>
+                              <th>Patroon</th>
+                              <td> </td>
+                           </tr>
+                           <tr>
+                              <th>Indicatie afleidbaar</th>
+                              <td> </td>
+                           </tr>
+                           <tr>
+                              <th>Waarde afleidbaar</th>
+                              <td>Nee</td>
+                           </tr>
+                        </tbody>
+                     </table>
+                     </section>
+                  
+                  <section id="detail_attribute_Normafwijking_Normafwijking_Recidive">
+                     <h6>Attribuutsoort details  <a href="#global_class_Normafwijking_Normafwijking">Normafwijking</a> Recidive</h6>
+                     
+                     <table style="width: 100%;">
+                        <colgroup style="width: 30%;"></colgroup>
+                        <colgroup style="width: 70%;"></colgroup>
+                        <tbody>
+                           <tr>
+                              <th>Naam</th>
+                              <td>Recidive</td>
+                           </tr>
+                           <tr>
+                              <th>Herkomst</th>
+                              <td> </td>
+                           </tr>
+                           <tr>
+                              <th>Definitie</th>
+                              <td> </td>
+                           </tr>
+                           <tr>
+                              <th>Herkomst definitie</th>
+                              <td> </td>
+                           </tr>
+                           <tr>
+                              <th>Datum opname</th>
+                              <td> </td>
+                           </tr>
+                           <tr>
+                              <th>Mogelijk geen waarde</th>
+                              <td> </td>
+                           </tr>
+                           <tr>
+                              <th>Indicatie kardinaliteit</th>
+                              <td>1</td>
+                           </tr>
+                           <tr>
+                              <th>Indicatie authentiek</th>
+                              <td>  </td>
+                           </tr>
+                           <tr>
+                              <th>Lengte</th>
+                              <td> </td>
+                           </tr>
+                           <tr>
+                              <th>Formaat</th>
+                              <td>
+                                 <a class="link" href="#detail_class_Normafwijking_StdIndJN">Std­Ind­JN</a>
+                                 </td>
+                           </tr>
+                           <tr>
+                              <th>Patroon</th>
+                              <td> </td>
+                           </tr>
+                           <tr>
+                              <th>Indicatie afleidbaar</th>
+                              <td> </td>
+                           </tr>
+                           <tr>
+                              <th>Waarde afleidbaar</th>
+                              <td>Nee</td>
+                           </tr>
+                        </tbody>
+                     </table>
+                     </section>
+                  
+                  <section id="detail_attribute_Normafwijking_Normafwijking_Typenormafwijking">
+                     <h6>Attribuutsoort details  <a href="#global_class_Normafwijking_Normafwijking">Normafwijking</a> Type normafwijking</h6>
+                     
+                     <table style="width: 100%;">
+                        <colgroup style="width: 30%;"></colgroup>
+                        <colgroup style="width: 70%;"></colgroup>
+                        <tbody>
+                           <tr>
+                              <th>Naam</th>
+                              <td>Type normafwijking</td>
+                           </tr>
+                           <tr>
+                              <th>Herkomst</th>
+                              <td> </td>
+                           </tr>
+                           <tr>
+                              <th>Definitie</th>
+                              <td> </td>
+                           </tr>
+                           <tr>
+                              <th>Herkomst definitie</th>
+                              <td> </td>
+                           </tr>
+                           <tr>
+                              <th>Datum opname</th>
+                              <td> </td>
+                           </tr>
+                           <tr>
+                              <th>Mogelijk geen waarde</th>
+                              <td> </td>
+                           </tr>
+                           <tr>
+                              <th>Indicatie kardinaliteit</th>
+                              <td>1</td>
+                           </tr>
+                           <tr>
+                              <th>Indicatie authentiek</th>
+                              <td>  </td>
+                           </tr>
+                           <tr>
+                              <th>Lengte</th>
+                              <td> </td>
+                           </tr>
+                           <tr>
+                              <th>Formaat</th>
+                              <td>
+                                 <a class="link" href="#detail_class_Normafwijking_TypeNormafwijking">Type­Normafwijking</a>
+                                 </td>
+                           </tr>
+                           <tr>
+                              <th>Patroon</th>
+                              <td> </td>
+                           </tr>
+                           <tr>
+                              <th>Indicatie afleidbaar</th>
+                              <td> </td>
+                           </tr>
+                           <tr>
+                              <th>Waarde afleidbaar</th>
+                              <td>Nee</td>
+                           </tr>
+                        </tbody>
+                     </table>
+                     </section>
+                  
+                  <section id="detail_attribute_Normafwijking_Normafwijking_Verwijtbaarheid">
+                     <h6>Attribuutsoort details  <a href="#global_class_Normafwijking_Normafwijking">Normafwijking</a> Verwijtbaarheid</h6>
+                     
+                     <table style="width: 100%;">
+                        <colgroup style="width: 30%;"></colgroup>
+                        <colgroup style="width: 70%;"></colgroup>
+                        <tbody>
+                           <tr>
+                              <th>Naam</th>
+                              <td>Verwijtbaarheid</td>
+                           </tr>
+                           <tr>
+                              <th>Herkomst</th>
+                              <td> </td>
+                           </tr>
+                           <tr>
+                              <th>Definitie</th>
+                              <td> </td>
+                           </tr>
+                           <tr>
+                              <th>Herkomst definitie</th>
+                              <td> </td>
+                           </tr>
+                           <tr>
+                              <th>Datum opname</th>
+                              <td> </td>
+                           </tr>
+                           <tr>
+                              <th>Mogelijk geen waarde</th>
+                              <td> </td>
+                           </tr>
+                           <tr>
+                              <th>Indicatie kardinaliteit</th>
+                              <td>1</td>
+                           </tr>
+                           <tr>
+                              <th>Indicatie authentiek</th>
+                              <td>  </td>
+                           </tr>
+                           <tr>
+                              <th>Lengte</th>
+                              <td> </td>
+                           </tr>
+                           <tr>
+                              <th>Formaat</th>
+                              <td>
+                                 <a class="link" href="#detail_class_Normafwijking_StdIndJN">Std­Ind­JN</a>
+                                 </td>
+                           </tr>
+                           <tr>
+                              <th>Patroon</th>
+                              <td> </td>
+                           </tr>
+                           <tr>
+                              <th>Indicatie afleidbaar</th>
+                              <td> </td>
+                           </tr>
+                           <tr>
+                              <th>Waarde afleidbaar</th>
+                              <td>Nee</td>
+                           </tr>
+                        </tbody>
+                     </table>
+                     </section>
+                  
+                  <section id="detail_association_Normafwijking_Normafwijking_NormafwijkingleidttotMaatregel">
+                     <h6>Relatiesoort details  <a href="#global_class_Normafwijking_Normafwijking">Normafwijking</a> Normafwijking leidt tot Maatregel</h6>
+                     
+                     <table style="width: 100%;">
+                        <colgroup style="width: 30%;"></colgroup>
+                        <colgroup style="width: 70%;"></colgroup>
+                        <tbody>
+                           <tr>
+                              <th>Naam</th>
+                              <td>Normafwijking leidt tot Maatregel</td>
+                           </tr>
+                           <tr>
+                              <th>Gerelateerd objecttype</th>
+                              <td>
+                                 <a class="link" href="#global_class_Normafwijking_Maatregel">Maatregel</a>
+                                 </td>
+                           </tr>
+                           <tr>
+                              <th>Herkomst</th>
+                              <td> </td>
+                           </tr>
+                           <tr>
+                              <th>Definitie</th>
+                              <td> </td>
+                           </tr>
+                           <tr>
+                              <th>Herkomst definitie</th>
+                              <td> </td>
+                           </tr>
+                           <tr>
+                              <th>Datum opname</th>
+                              <td> </td>
+                           </tr>
+                           <tr>
+                              <th>Mogelijk geen waarde</th>
+                              <td>Nee</td>
+                           </tr>
+                           <tr>
+                              <th>Indicatie in onderzoek</th>
+                              <td>Nee</td>
+                           </tr>
+                           <tr>
+                              <th>Aanduiding strijdigheid/nietigheid</th>
+                              <td> </td>
+                           </tr>
+                           <tr>
+                              <th>Indicatie kardinaliteit</th>
+                              <td>1</td>
+                           </tr>
+                           <tr>
+                              <th>Indicatie authentiek</th>
+                              <td>Authentiek</td>
+                           </tr>
+                           <tr>
+                              <th>Regels</th>
+                              <td> </td>
+                           </tr>
+                        </tbody>
+                     </table>
+                     
+                     </section>
+                  </section>
+               
+               <section id="detail_class_Normafwijking_Afwijkendemaatregel">
+                  <h5>   Afwijkende maatregel</h5>
+                  
+                  <section id="detail_attribute_Normafwijking_Afwijkendemaatregel_Bedrag">
+                     <h6>Attribuutsoort details  <a href="#global_class_Normafwijking_Afwijkendemaatregel">Afwijkende maatregel</a> Bedrag</h6>
+                     
+                     <table style="width: 100%;">
+                        <colgroup style="width: 30%;"></colgroup>
+                        <colgroup style="width: 70%;"></colgroup>
+                        <tbody>
+                           <tr>
+                              <th>Naam</th>
+                              <td>Bedrag</td>
+                           </tr>
+                           <tr>
+                              <th>Herkomst</th>
+                              <td> </td>
+                           </tr>
+                           <tr>
+                              <th>Definitie</th>
+                              <td> </td>
+                           </tr>
+                           <tr>
+                              <th>Herkomst definitie</th>
+                              <td> </td>
+                           </tr>
+                           <tr>
+                              <th>Datum opname</th>
+                              <td> </td>
+                           </tr>
+                           <tr>
+                              <th>Mogelijk geen waarde</th>
+                              <td> </td>
+                           </tr>
+                           <tr>
+                              <th>Indicatie kardinaliteit</th>
+                              <td>1</td>
+                           </tr>
+                           <tr>
+                              <th>Indicatie authentiek</th>
+                              <td>  </td>
+                           </tr>
+                           <tr>
+                              <th>Lengte</th>
+                              <td> </td>
+                           </tr>
+                           <tr>
+                              <th>Formaat</th>
+                              <td>
+                                 <a class="link" href="#detail_class_Normafwijking_Geldbedrag">Geldbedrag</a>
+                                 </td>
+                           </tr>
+                           <tr>
+                              <th>Patroon</th>
+                              <td> </td>
+                           </tr>
+                           <tr>
+                              <th>Indicatie afleidbaar</th>
+                              <td> </td>
+                           </tr>
+                           <tr>
+                              <th>Waarde afleidbaar</th>
+                              <td>Nee</td>
+                           </tr>
+                        </tbody>
+                     </table>
+                     </section>
+                  
+                  <section id="detail_attribute_Normafwijking_Afwijkendemaatregel_Coderedenafwijkingmaatregel">
+                     <h6>Attribuutsoort details  <a href="#global_class_Normafwijking_Afwijkendemaatregel">Afwijkende maatregel</a> Code reden afwijking maatregel</h6>
+                     
+                     <table style="width: 100%;">
+                        <colgroup style="width: 30%;"></colgroup>
+                        <colgroup style="width: 70%;"></colgroup>
+                        <tbody>
+                           <tr>
+                              <th>Naam</th>
+                              <td>Code reden afwijking maatregel</td>
+                           </tr>
+                           <tr>
+                              <th>Herkomst</th>
+                              <td> </td>
+                           </tr>
+                           <tr>
+                              <th>Definitie</th>
+                              <td> </td>
+                           </tr>
+                           <tr>
+                              <th>Herkomst definitie</th>
+                              <td> </td>
+                           </tr>
+                           <tr>
+                              <th>Datum opname</th>
+                              <td> </td>
+                           </tr>
+                           <tr>
+                              <th>Mogelijk geen waarde</th>
+                              <td> </td>
+                           </tr>
+                           <tr>
+                              <th>Indicatie kardinaliteit</th>
+                              <td>1</td>
+                           </tr>
+                           <tr>
+                              <th>Indicatie authentiek</th>
+                              <td>  </td>
+                           </tr>
+                           <tr>
+                              <th>Lengte</th>
+                              <td> </td>
+                           </tr>
+                           <tr>
+                              <th>Formaat</th>
+                              <td>
+                                 <a class="external-link" href="https://docs.geostandaarden.nl/mim/def-st-mim-20220217/#primitive-datatypes">Character­String</a>
+                                 </td>
+                           </tr>
+                           <tr>
+                              <th>Patroon</th>
+                              <td> </td>
+                           </tr>
+                           <tr>
+                              <th>Indicatie afleidbaar</th>
+                              <td> </td>
+                           </tr>
+                           <tr>
+                              <th>Waarde afleidbaar</th>
+                              <td>Nee</td>
+                           </tr>
+                        </tbody>
+                     </table>
+                     </section>
+                  
+                  <section id="detail_attribute_Normafwijking_Afwijkendemaatregel_Motivatieafwijkingmaatregel">
+                     <h6>Attribuutsoort details  <a href="#global_class_Normafwijking_Afwijkendemaatregel">Afwijkende maatregel</a> Motivatie afwijking maatregel</h6>
+                     
+                     <table style="width: 100%;">
+                        <colgroup style="width: 30%;"></colgroup>
+                        <colgroup style="width: 70%;"></colgroup>
+                        <tbody>
+                           <tr>
+                              <th>Naam</th>
+                              <td>Motivatie afwijking maatregel</td>
+                           </tr>
+                           <tr>
+                              <th>Herkomst</th>
+                              <td> </td>
+                           </tr>
+                           <tr>
+                              <th>Definitie</th>
+                              <td> </td>
+                           </tr>
+                           <tr>
+                              <th>Herkomst definitie</th>
+                              <td> </td>
+                           </tr>
+                           <tr>
+                              <th>Datum opname</th>
+                              <td> </td>
+                           </tr>
+                           <tr>
+                              <th>Mogelijk geen waarde</th>
+                              <td> </td>
+                           </tr>
+                           <tr>
+                              <th>Indicatie kardinaliteit</th>
+                              <td>1</td>
+                           </tr>
+                           <tr>
+                              <th>Indicatie authentiek</th>
+                              <td>  </td>
+                           </tr>
+                           <tr>
+                              <th>Lengte</th>
+                              <td> </td>
+                           </tr>
+                           <tr>
+                              <th>Formaat</th>
+                              <td>
+                                 <a class="external-link" href="https://docs.geostandaarden.nl/mim/def-st-mim-20220217/#primitive-datatypes">Character­String</a>
+                                 </td>
+                           </tr>
+                           <tr>
+                              <th>Patroon</th>
+                              <td> </td>
+                           </tr>
+                           <tr>
+                              <th>Indicatie afleidbaar</th>
+                              <td> </td>
+                           </tr>
+                           <tr>
+                              <th>Waarde afleidbaar</th>
+                              <td>Nee</td>
+                           </tr>
+                        </tbody>
+                     </table>
+                     </section>
+                  
+                  <section id="detail_attribute_Normafwijking_Afwijkendemaatregel_Percentage">
+                     <h6>Attribuutsoort details  <a href="#global_class_Normafwijking_Afwijkendemaatregel">Afwijkende maatregel</a> Percentage</h6>
+                     
+                     <table style="width: 100%;">
+                        <colgroup style="width: 30%;"></colgroup>
+                        <colgroup style="width: 70%;"></colgroup>
+                        <tbody>
+                           <tr>
+                              <th>Naam</th>
+                              <td>Percentage</td>
+                           </tr>
+                           <tr>
+                              <th>Herkomst</th>
+                              <td> </td>
+                           </tr>
+                           <tr>
+                              <th>Definitie</th>
+                              <td> </td>
+                           </tr>
+                           <tr>
+                              <th>Herkomst definitie</th>
+                              <td> </td>
+                           </tr>
+                           <tr>
+                              <th>Datum opname</th>
+                              <td> </td>
+                           </tr>
+                           <tr>
+                              <th>Mogelijk geen waarde</th>
+                              <td> </td>
+                           </tr>
+                           <tr>
+                              <th>Indicatie kardinaliteit</th>
+                              <td>1</td>
+                           </tr>
+                           <tr>
+                              <th>Indicatie authentiek</th>
+                              <td>  </td>
+                           </tr>
+                           <tr>
+                              <th>Lengte</th>
+                              <td> </td>
+                           </tr>
+                           <tr>
+                              <th>Formaat</th>
+                              <td>
+                                 <a class="external-link" href="https://docs.geostandaarden.nl/mim/def-st-mim-20220217/#primitive-datatypes">Integer</a>
+                                 </td>
+                           </tr>
+                           <tr>
+                              <th>Patroon</th>
+                              <td> </td>
+                           </tr>
+                           <tr>
+                              <th>Indicatie afleidbaar</th>
+                              <td> </td>
+                           </tr>
+                           <tr>
+                              <th>Waarde afleidbaar</th>
+                              <td>Nee</td>
+                           </tr>
+                        </tbody>
+                     </table>
+                     </section>
+                  
+                  <section id="detail_association_Normafwijking_Afwijkendemaatregel_AfwijkendemaatregelrefereertnaarMaatregelopuitkering">
+                     <h6>Relatiesoort details  <a href="#global_class_Normafwijking_Afwijkendemaatregel">Afwijkende maatregel</a> Afwijkende maatregel refereert naar Maatregel op uitkering</h6>
+                     
+                     <table style="width: 100%;">
+                        <colgroup style="width: 30%;"></colgroup>
+                        <colgroup style="width: 70%;"></colgroup>
+                        <tbody>
+                           <tr>
+                              <th>Naam</th>
+                              <td>Afwijkende maatregel refereert naar Maatregel op uitkering</td>
+                           </tr>
+                           <tr>
+                              <th>Gerelateerd objecttype</th>
+                              <td>
+                                 <a class="link" href="#global_class_Normafwijking_Maatregelopuitkering">Maatregel op uitkering</a>
+                                 </td>
+                           </tr>
+                           <tr>
+                              <th>Herkomst</th>
+                              <td> </td>
+                           </tr>
+                           <tr>
+                              <th>Definitie</th>
+                              <td> </td>
+                           </tr>
+                           <tr>
+                              <th>Herkomst definitie</th>
+                              <td> </td>
+                           </tr>
+                           <tr>
+                              <th>Datum opname</th>
+                              <td> </td>
+                           </tr>
+                           <tr>
+                              <th>Mogelijk geen waarde</th>
+                              <td>Nee</td>
+                           </tr>
+                           <tr>
+                              <th>Indicatie in onderzoek</th>
+                              <td>Nee</td>
+                           </tr>
+                           <tr>
+                              <th>Aanduiding strijdigheid/nietigheid</th>
+                              <td> </td>
+                           </tr>
+                           <tr>
+                              <th>Indicatie kardinaliteit</th>
+                              <td>1</td>
+                           </tr>
+                           <tr>
+                              <th>Indicatie authentiek</th>
+                              <td>Authentiek</td>
+                           </tr>
+                           <tr>
+                              <th>Regels</th>
+                              <td> </td>
+                           </tr>
+                        </tbody>
+                     </table>
+                     
+                     </section>
+                  </section>
+               </section>
+            
+            
+            
+            
+            <section>
+               <h4>Gestructureerde datatypen  </h4>
+               
+               <section id="detail_class_Normafwijking_Geldbedrag">
+                  <h5>Gestructureerd datatype   Geldbedrag</h5>
+                  
+                  <section id="detail_attribute_Normafwijking_Geldbedrag_Som">
+                     <h6>Data element  <a href="#global_class_Normafwijking_Geldbedrag">Geldbedrag</a> Som</h6>
+                     
+                     <table style="width: 100%;">
+                        <colgroup style="width: 30%;"></colgroup>
+                        <colgroup style="width: 70%;"></colgroup>
+                        <tbody>
+                           <tr>
+                              <th>Naam</th>
+                              <td>Som</td>
+                           </tr>
+                           <tr>
+                              <th>Herkomst</th>
+                              <td> </td>
+                           </tr>
+                           <tr>
+                              <th>Definitie</th>
+                              <td> </td>
+                           </tr>
+                           <tr>
+                              <th>Herkomst definitie</th>
+                              <td> </td>
+                           </tr>
+                           <tr>
+                              <th>Indicatie kardinaliteit</th>
+                              <td>1</td>
+                           </tr>
+                           <tr>
+                              <th>Formaat</th>
+                              <td>
+                                 <a class="external-link" href="https://docs.geostandaarden.nl/mim/def-st-mim-20220217/#primitive-datatypes">Real</a>
+                                 </td>
+                           </tr>
+                           <tr>
+                              <th>Patroon</th>
+                              <td> </td>
+                           </tr>
+                        </tbody>
+                     </table>
+                     </section>
+                  
+                  <section id="detail_attribute_Normafwijking_Geldbedrag_Valuta">
+                     <h6>Data element  <a href="#global_class_Normafwijking_Geldbedrag">Geldbedrag</a> Valuta</h6>
+                     
+                     <table style="width: 100%;">
+                        <colgroup style="width: 30%;"></colgroup>
+                        <colgroup style="width: 70%;"></colgroup>
+                        <tbody>
+                           <tr>
+                              <th>Naam</th>
+                              <td>Valuta</td>
+                           </tr>
+                           <tr>
+                              <th>Herkomst</th>
+                              <td> </td>
+                           </tr>
+                           <tr>
+                              <th>Definitie</th>
+                              <td> </td>
+                           </tr>
+                           <tr>
+                              <th>Herkomst definitie</th>
+                              <td> </td>
+                           </tr>
+                           <tr>
+                              <th>Indicatie kardinaliteit</th>
+                              <td>1</td>
+                           </tr>
+                           <tr>
+                              <th>Formaat</th>
+                              <td>
+                                 <a class="external-link" href="https://docs.geostandaarden.nl/mim/def-st-mim-20220217/#primitive-datatypes">Character­String</a>
+                                 </td>
+                           </tr>
+                           <tr>
+                              <th>Patroon</th>
+                              <td> </td>
+                           </tr>
+                        </tbody>
+                     </table>
+                     </section>
+                  </section>
+               </section>
+            
+            
+            
+            
+            <section>
+               <h4>Enumeratie  </h4>
+               
+               <section id="detail_class_Normafwijking_BurgerlijkeStaat">
+                  <h5>Enumeratie details  Burgerlijke­Staat</h5>
+                  
+                  <table style="width: 100%;" class="list">
+                     <colgroup></colgroup>
+                     <tbody>
+                        <tr>
+                           <td></td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  
+                  <table style="width: 100%;" class="list">
+                     <colgroup style="width: 50%;"></colgroup>
+                     <colgroup></colgroup>
+                     <tbody>
+                        <tr>
+                           <th>Waarde</th>
+                           <th>Omschrijving</th>
+                        </tr>
+                        <tr>
+                           <td>Achtergebleven geregistreerd partner</td>
+                           <td></td>
+                        </tr>
+                        <tr>
+                           <td>Gehuwd</td>
+                           <td></td>
+                        </tr>
+                        <tr>
+                           <td>Geregistreerd partner</td>
+                           <td></td>
+                        </tr>
+                        <tr>
+                           <td>Gescheiden</td>
+                           <td></td>
+                        </tr>
+                        <tr>
+                           <td>Gescheiden geregistreerd partner</td>
+                           <td></td>
+                        </tr>
+                        <tr>
+                           <td>Onbekend</td>
+                           <td></td>
+                        </tr>
+                        <tr>
+                           <td>Ongehuwd en geen geregistreerd partner en nooit gehuwd of geregistreerd partner geweest</td>
+                           <td></td>
+                        </tr>
+                        <tr>
+                           <td>Ongehuwd en geen geregistreerd partner, eventueel wel gehuwd of geregistreerd partner
+                              geweest</td>
+                           <td></td>
+                        </tr>
+                        <tr>
+                           <td>Weduwe/weduwnaar</td>
+                           <td></td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  </section>
+               
+               <section id="detail_class_Normafwijking_CdBrpGegevensGeheim">
+                  <h5>Enumeratie details  Cd­Brp­Gegevens­Geheim</h5>
+                  
+                  <table style="width: 100%;" class="list">
+                     <colgroup></colgroup>
+                     <tbody>
+                        <tr>
+                           <td></td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  
+                  <table style="width: 100%;" class="list">
+                     <colgroup style="width: 50%;"></colgroup>
+                     <colgroup></colgroup>
+                     <tbody>
+                        <tr>
+                           <th>Waarde</th>
+                           <th>Omschrijving</th>
+                        </tr>
+                        <tr>
+                           <td>geen beperking</td>
+                           <td></td>
+                        </tr>
+                        <tr>
+                           <td>niet aan kerken</td>
+                           <td></td>
+                        </tr>
+                        <tr>
+                           <td>niet aan kerken en niet aan vrije derden</td>
+                           <td></td>
+                        </tr>
+                        <tr>
+                           <td>niet aan vrije derden</td>
+                           <td></td>
+                        </tr>
+                        <tr>
+                           <td>niet zonder toestemming aan derden ter uitvoering van een algemeen verbindend voorschrift</td>
+                           <td></td>
+                        </tr>
+                        <tr>
+                           <td>niet zonder toestemming aan derden ter uitvoering van een algemeen verbindend voorschrift
+                              en niet aan kerken</td>
+                           <td></td>
+                        </tr>
+                        <tr>
+                           <td>niet zonder toestemming aan derden ter uitvoering van een algemeen verbindend voorschrift
+                              en niet aan vrije derden</td>
+                           <td></td>
+                        </tr>
+                        <tr>
+                           <td>niet zonder toestemming aan derden ter uitvoering van een algemeen verbindend voorschrift
+                              en niet aan vrije derden en niet aan kerken</td>
+                           <td></td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  </section>
+               
+               <section id="detail_class_Normafwijking_TypeNormafwijking">
+                  <h5>Enumeratie details  Type­Normafwijking</h5>
+                  
+                  <table style="width: 100%;" class="list">
+                     <colgroup></colgroup>
+                     <tbody>
+                        <tr>
+                           <td></td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  
+                  <table style="width: 100%;" class="list">
+                     <colgroup style="width: 50%;"></colgroup>
+                     <colgroup></colgroup>
+                     <tbody>
+                        <tr>
+                           <th>Waarde</th>
+                           <th>Omschrijving</th>
+                        </tr>
+                        <tr>
+                           <td>Afwikingstype 1</td>
+                           <td></td>
+                        </tr>
+                        <tr>
+                           <td>Afwikingstype 2</td>
+                           <td></td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  </section>
+               
+               <section id="detail_class_Normafwijking_Geslacht">
+                  <h5>Enumeratie details  Geslacht</h5>
+                  
+                  <table style="width: 100%;" class="list">
+                     <colgroup></colgroup>
+                     <tbody>
+                        <tr>
+                           <td></td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  
+                  <table style="width: 100%;" class="list">
+                     <colgroup style="width: 50%;"></colgroup>
+                     <colgroup></colgroup>
+                     <tbody>
+                        <tr>
+                           <th>Waarde</th>
+                           <th>Omschrijving</th>
+                        </tr>
+                        <tr>
+                           <td>mannelijk</td>
+                           <td></td>
+                        </tr>
+                        <tr>
+                           <td>niet gespecificeerd (het gegevenselement wordt niet gevoerd in de administratie)</td>
+                           <td></td>
+                        </tr>
+                        <tr>
+                           <td>onbekend</td>
+                           <td></td>
+                        </tr>
+                        <tr>
+                           <td>vrouwelijk</td>
+                           <td></td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  </section>
+               
+               <section id="detail_class_Normafwijking_AanduidingNaamgebruik">
+                  <h5>Enumeratie details  Aanduiding­Naamgebruik</h5>
+                  
+                  <table style="width: 100%;" class="list">
+                     <colgroup></colgroup>
+                     <tbody>
+                        <tr>
+                           <td></td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  
+                  <table style="width: 100%;" class="list">
+                     <colgroup style="width: 50%;"></colgroup>
+                     <colgroup></colgroup>
+                     <tbody>
+                        <tr>
+                           <th>Waarde</th>
+                           <th>Omschrijving</th>
+                        </tr>
+                        <tr>
+                           <td>Eigen naam</td>
+                           <td></td>
+                        </tr>
+                        <tr>
+                           <td>Eigen naam gevolgd door naam echtgeno(o)te of geregistreerd partner</td>
+                           <td></td>
+                        </tr>
+                        <tr>
+                           <td>Naam echtgeno(o)te of geregistreerd partner</td>
+                           <td></td>
+                        </tr>
+                        <tr>
+                           <td>Naam echtgeno(o)te of geregistreerd partner gevolgd door eigen naam</td>
+                           <td></td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  </section>
+               
+               <section id="detail_class_Normafwijking_CodeRedenMaatregel">
+                  <h5>Enumeratie details  Code­Reden­Maatregel</h5>
+                  
+                  <table style="width: 100%;" class="list">
+                     <colgroup></colgroup>
+                     <tbody>
+                        <tr>
+                           <td></td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  
+                  <table style="width: 100%;" class="list">
+                     <colgroup style="width: 50%;"></colgroup>
+                     <colgroup></colgroup>
+                     <tbody>
+                        <tr>
+                           <th>Waarde</th>
+                           <th>Omschrijving</th>
+                        </tr>
+                        <tr>
+                           <td>Agressief gedrag</td>
+                           <td></td>
+                        </tr>
+                        <tr>
+                           <td>niet (voldoende) nakomen van afspraken m.b.t. beheersing van de Nederlandse taal (art.
+                              18b Participatiewet)</td>
+                           <td></td>
+                        </tr>
+                        <tr>
+                           <td>niet (voldoende) zoeken naar scholing in zoekperiode van 4 weken</td>
+                           <td></td>
+                        </tr>
+                        <tr>
+                           <td>niet (voldoende) zoeken naar werk in zoekperiode van 4 weken</td>
+                           <td></td>
+                        </tr>
+                        <tr>
+                           <td>niet nakomen tegenprestatie</td>
+                           <td></td>
+                        </tr>
+                        <tr>
+                           <td>niet nakomen verplichtingen plan van aanpak</td>
+                           <td></td>
+                        </tr>
+                        <tr>
+                           <td>oorzaak bij partner</td>
+                           <td></td>
+                        </tr>
+                        <tr>
+                           <td>reden op het vlak van plicht tot arbeidsinschakeling</td>
+                           <td></td>
+                        </tr>
+                        <tr>
+                           <td>tekortschietend besef van verantwoordelijkheid</td>
+                           <td></td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  </section>
+               
+               <section id="detail_class_Normafwijking_CdAdellijkeTitelPredikaatNed">
+                  <h5>Enumeratie details  Cd­Adellijke­Titel­Predikaat­Ned</h5>
+                  
+                  <table style="width: 100%;" class="list">
+                     <colgroup></colgroup>
+                     <tbody>
+                        <tr>
+                           <td></td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  
+                  <table style="width: 100%;" class="list">
+                     <colgroup style="width: 50%;"></colgroup>
+                     <colgroup></colgroup>
+                     <tbody>
+                        <tr>
+                           <th>Waarde</th>
+                           <th>Omschrijving</th>
+                        </tr>
+                        <tr>
+                           <td>Baron</td>
+                           <td></td>
+                        </tr>
+                        <tr>
+                           <td>Barones</td>
+                           <td></td>
+                        </tr>
+                        <tr>
+                           <td>Graaf</td>
+                           <td></td>
+                        </tr>
+                        <tr>
+                           <td>Gravin</td>
+                           <td></td>
+                        </tr>
+                        <tr>
+                           <td>Hertog</td>
+                           <td></td>
+                        </tr>
+                        <tr>
+                           <td>Hertogin</td>
+                           <td></td>
+                        </tr>
+                        <tr>
+                           <td>Jonkheer</td>
+                           <td></td>
+                        </tr>
+                        <tr>
+                           <td>Jonkvrouw</td>
+                           <td></td>
+                        </tr>
+                        <tr>
+                           <td>Markies</td>
+                           <td></td>
+                        </tr>
+                        <tr>
+                           <td>Markiezin</td>
+                           <td></td>
+                        </tr>
+                        <tr>
+                           <td>Prins</td>
+                           <td></td>
+                        </tr>
+                        <tr>
+                           <td>Prinses</td>
+                           <td></td>
+                        </tr>
+                        <tr>
+                           <td>Ridder</td>
+                           <td></td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  </section>
+               
+               <section id="detail_class_Normafwijking_StdIndJN">
+                  <h5>Enumeratie details  Std­Ind­JN</h5>
+                  
+                  <table style="width: 100%;" class="list">
+                     <colgroup></colgroup>
+                     <tbody>
+                        <tr>
+                           <td></td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  
+                  <table style="width: 100%;" class="list">
+                     <colgroup style="width: 50%;"></colgroup>
+                     <colgroup></colgroup>
+                     <tbody>
+                        <tr>
+                           <th>Waarde</th>
+                           <th>Omschrijving</th>
+                        </tr>
+                        <tr>
+                           <td>Ja</td>
+                           <td></td>
+                        </tr>
+                        <tr>
+                           <td>Nee</td>
+                           <td></td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  </section>
+               
+               <section id="detail_class_Normafwijking_Predicaat">
+                  <h5>Enumeratie details  Predicaat</h5>
+                  
+                  <table style="width: 100%;" class="list">
+                     <colgroup></colgroup>
+                     <tbody>
+                        <tr>
+                           <td></td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  
+                  <table style="width: 100%;" class="list">
+                     <colgroup style="width: 50%;"></colgroup>
+                     <colgroup></colgroup>
+                     <tbody>
+                        <tr>
+                           <th>Waarde</th>
+                           <th>Omschrijving</th>
+                        </tr>
+                        <tr>
+                           <td>Jonkheer</td>
+                           <td></td>
+                        </tr>
+                        <tr>
+                           <td>Jonkvrouw</td>
+                           <td></td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  </section>
+               
+               <section id="detail_class_Normafwijking_TypeMaatregel">
+                  <h5>Enumeratie details  Type­Maatregel</h5>
+                  
+                  <table style="width: 100%;" class="list">
+                     <colgroup></colgroup>
+                     <tbody>
+                        <tr>
+                           <td></td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  
+                  <table style="width: 100%;" class="list">
+                     <colgroup style="width: 50%;"></colgroup>
+                     <colgroup></colgroup>
+                     <tbody>
+                        <tr>
+                           <th>Waarde</th>
+                           <th>Omschrijving</th>
+                        </tr>
+                        <tr>
+                           <td>Afwijking maatregel</td>
+                           <td></td>
+                        </tr>
+                        <tr>
+                           <td>Boete</td>
+                           <td></td>
+                        </tr>
+                        <tr>
+                           <td>Maatregel op uitkering</td>
+                           <td></td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  </section>
+               </section>
+            </section>
+      </section>
+      <section id="epilogue" class="informative" level="1">
+         <h1>Epiloog</h1>
+         <p>
+            Epiloog conceptueel model hier.
+            </p>
+      </section>
+   </body>
+</html>
