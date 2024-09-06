@@ -18,7 +18,7 @@ let respecConfig = {
   //previousPublishDate: "2022-06-24",
   //previousPublishVersion: "0.0.4",
   
-  title: "Ontologie Inkomen",
+  title: "Normafwijking",
 //  subtitle: "Tevens een voorbeeld van een gegenereerd Respec document",
 //  content: {"mermaid": "", "ch01": "informative", "ch02": ""},
 //  authors:
