@@ -1,1 +1,1 @@
-Hier komt de samenvatting van het document.
+Dit submodel is onderdeel van de [ontologie Inkomen](https://vng-realisatie.github.io/Ontologie-Inkomen/).
