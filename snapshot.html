@@ -1,7 +1,7 @@
 <!DOCTYPE html><html lang="nl"><head>
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta content="text/html; charset=utf-8" http-equiv="content-type">
-<meta name="generator" content="ReSpec 35.1.1">
+<meta name="generator" content="ReSpec 35.2.2">
 <style>
 dfn{cursor:pointer}
 .dfn-panel{position:absolute;z-index:35;min-width:300px;max-width:500px;padding:.5em .75em;margin-top:.6em;font-family:"Helvetica Neue",sans-serif;font-size:small;background:#fff;background:var(--indextable-hover-bg,#fff);color:#000;color:var(--text,#000);box-shadow:0 1em 3em -.4em rgba(0,0,0,.3),0 0 1px 1px rgba(0,0,0,.05);box-shadow:0 1em 3em -.4em var(--tocsidebar-shadow,rgba(0,0,0,.3)),0 0 1px 1px var(--tocsidebar-shadow,rgba(0,0,0,.05));border-radius:2px}
@@ -30,9 +30,9 @@ dfn{cursor:pointer}
   
   
 <script>document.title = respecConfig.title</script>
-<title>Normafwijking</title>
+<title>Ontologie inkomen</title>
   
-<title>Model Normafwijking</title>
+<title>Ontologie Inkomen</title>
   
 <link rel="shortcut icon" type="image/x-icon" href="https://vng-realisatie.github.io/VNG-R-Respec-Organization-configurations/media/logo-VNG-Realisatie.ico">
   
@@ -93,18 +93,7 @@ dd{margin-left:0}
 <style id="respec-nlgov">
 img.license{float:left;padding-right:5px}
 </style>
-<style>
-ul.index{columns:30ch;column-gap:1.5em}
-ul.index li{list-style:inherit}
-ul.index li span{color:inherit;cursor:pointer;white-space:normal}
-#index-defined-here ul.index li{font-size:.9rem}
-ul.index code{color:inherit}
-#index-defined-here .print-only{display:none}
-@media print{
-#index-defined-here .print-only{display:initial}
-}
-</style>
-<meta name="description" content="Hier komt de samenvatting van het document.">
+<meta name="color-scheme" content="light">
 <style>
 
   .sidelabel {
@@ -241,7 +230,7 @@ ul.index code{color:inherit}
   "specStatus": "IO",
   "publishDate": "2024-07-01",
   "publishVersion": "1.0.0",
-  "title": "Normafwijking",
+  "title": "Ontologie inkomen",
   "editors": [
     {
       "name": "Jan Brinkkemper",
@@ -259,9 +248,9 @@ ul.index code{color:inherit}
 }</script>
 <link rel="stylesheet" href="https://gitdocumentatie.logius.nl/publicatie/respec/style/base.css"></head>
 
-<body class="h-entry toc-inline"><div class="head">
+<body class="h-entry informative"><div class="head">
     <a class="logo" href="https://www.vng.nl"><img alt="VNG-Realisatie" height="77" id="VNG-Realisatie" src="https://vng-realisatie.github.io/VNG-R-Respec-Organization-configurations/media/logo-VNG-Realisatie.jpg">
-  </a> <h1 id="title" class="title">Normafwijking</h1>
+  </a> <h1 id="title" class="title">Ontologie inkomen</h1>
     
     <h2>
       VNG Realisatie Informatiemodel<br>
@@ -304,46 +293,56 @@ ul.index code{color:inherit}
           <a rel="alternate" href="Ontologie-Inkomen.pdf">pdf</a>
         </p>
     <p class="copyright">
-          Dit document valt onder de volgende licentie: 
-          <a rel="license" href="https://eupl.eu/" class="subfoot"><img class="license" src="https://eupl.eu/eu.png" alt="Logo EUROPEAN UNION PUBLIC LICENCE v. 1.2"><br> EUROPEAN UNION PUBLIC LICENCE v. 1.2</a>
-        </p>
+            Dit document valt onder de volgende licentie: 
+            <a rel="license" href="https://eupl.eu/" class="subfoot"><img class="license" src="https://eupl.eu/eu.png" alt="Logo EUROPEAN UNION PUBLIC LICENCE v. 1.2"><br> EUROPEAN UNION PUBLIC LICENCE v. 1.2</a>
+          </p>
     <hr title="Separator for header">
   </div>
-  <section id="abstract" class="introductory"><h2>Samenvatting</h2><p>Hier komt de samenvatting van het document.</p>
-</section>
-  <section id="sotd" class="introductory"><h2>Status van dit document</h2><p>Dit document is nog 'In Ontwikkeling'.</p></section><nav id="toc"><h2 class="introductory" id="inhoudsopgave">Inhoudsopgave</h2><ol class="toc"><li class="tocline"><a class="tocxref" href="#abstract">Samenvatting</a></li><li class="tocline"><a class="tocxref" href="#sotd">Status van dit document</a></li><li class="tocline"><a class="tocxref" href="#cat"><bdi class="secno">1. </bdi>Gegevensdefinitie</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#ontologie-inkomen"><bdi class="secno">1.1 </bdi>Ontologie Inkomen</a></li></ol></li><li class="tocline"><a class="tocxref" href="#conformance"><bdi class="secno">2. </bdi>Conformiteit</a></li><li class="tocline"><a class="tocxref" href="#index"><bdi class="secno">A. </bdi>Index</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#index-defined-here"><bdi class="secno">A.1 </bdi>Begrippen gedefinieerd door deze specificatie</a></li><li class="tocline"><a class="tocxref" href="#index-defined-elsewhere"><bdi class="secno">A.2 </bdi>Begrippen gedefinieerd door verwijzing</a></li></ol></li></ol></nav>
-  <section id="cat"> <div class="header-wrapper"><h2 id="x1-gegevensdefinitie"><bdi class="secno">1. </bdi>Gegevensdefinitie</h2><a class="self-link" href="#cat" aria-label="Permalink for Section 1."></a></div>
-         <p><b>Deze tekst is normatief.</b>
-            </p>
-         <div class="imageinfo overview"><img src="Images/EAID_BE10B4D8_2FFE_4813_9FE9_E95C01985270.png" usemap="#imagemap-EAID_BE10B4D8_2FFE_4813_9FE9_E95C01985270" alt="Diagram: Normafwijking - overzicht"><map name="imagemap-EAID_BE10B4D8_2FFE_4813_9FE9_E95C01985270"><area shape="rect" alt="Normafwijking" coords="813,68,1081,279" href="#global_class_Normafwijking_Normafwijking"><area shape="rect" alt="Maatregel op uitkering" coords="41,506,356,646" href="#global_class_Normafwijking_Maatregelopuitkering"><area shape="rect" alt="Boete" coords="614,304,843,461" href="#global_class_Normafwijking_Boete"><area shape="rect" alt="Afwijkende maatregel" coords="761,498,1060,655" href="#global_class_Normafwijking_Afwijkendemaatregel"><area shape="rect" alt="Maatregel" coords="83,75,313,250" href="#global_class_Normafwijking_Maatregel"></map><p><b>Normafwijking - overzicht</b>
+   <section id="cat"> <div class="header-wrapper"><h2 id="x1-ontologie-inkomen"><bdi class="secno">1. </bdi>Ontologie Inkomen</h2><a class="self-link" href="#cat" aria-label="Permalink for Section 1."></a></div>
                
-               </p><p></p>
-               <p></p>
-         </div>
-         <section id="ontologie-inkomen">
-            <div class="header-wrapper"><h3 id="x1-1-ontologie-inkomen"><bdi class="secno">1.1 </bdi>Ontologie Inkomen</h3><a class="self-link" href="#ontologie-inkomen" aria-label="Permalink for Section 1.1"></a></div>
-            
+               <p>De ontologie is onderverdeeld in zogenaamde subject areas. Voor elk subject area is een model gemaakt. De hierarchische opbouw volgt hieronder. Door te klikken op een van de modellen, opent u de details.</p>
+             
 
+         <section>
                <ul>
-				<li><a class="link" href="https://vng-gbi.github.io/levenssituatie/">Model Levenssituatie</a></li>
-				<li><a class="link" href="https://vng-gbi.github.io/Vermogen/">Model Vermogen</a></li>
-				<li><a class="link" href="https://vng-gbi.github.io/levenssituatie/">Model Normafwijking</a></li>
+				<li><a class="link" href="https://vng-gbi.github.io/Levenssituatie/">Levenssituatie</a></li>
+				<li><a class="link" href="https://vng-gbi.github.io/Persoonsgegevens/">Persoonsgegevens</a></li>
+				<li><a class="link" href="https://vng-gbi.github.io/Relaties/">Relaties</a></li>
+				<li><a class="link" href="https://vng-gbi.github.io/Locatie/">Locatie</a></li>
+				<li><a class="link" href="https://vng-gbi.github.io/Organisatie/">Organisatie</a></li>
+				<li><a class="link" href="#">Profiel</a></li>
+					<ul>
+						<li><a class="link" href="https://vng-gbi.github.io/Vermogen/">Vermogen</a></li>
+						<li><a class="link" href="https://vng-gbi.github.io/Reden-aanvraag/">Reden aanvraag</a></li>
+						<li><a class="link" href="https://vng-gbi.github.io/Profiel-overig/">Profiel overig</a></li>
+						<li><a class="link" href="https://vng-gbi.github.io/Inkomsten/">Inkomsten</a></li>
+					</ul>
+				<li><a class="link" href="https://vng-gbi.github.io/Normafwijking">Normafwijking</a></li>
+				<li><a class="link" href="https://vng-gbi.github.io/Terug-en-invordering/">Terug- en Invordering</a></li>
+				<li><a class="link" href="https://vng-gbi.github.io/Zaak">Zaak</a></li>
+				<li><a class="link" href="#">Instantiemodellen</a></li>
+					<ul>
+						<li><a class="link" href="https://vng-gbi.github.io/Diensten/">Diensten</a></li>
+					</ul>
+				<li><a class="link" href="https://vng-gbi.github.io/Ontologiebeschrijving">Ontologiebeschrijving</a></li>
+					<ul>
+						<li><a class="link" href="https://vng-gbi.github.io/Ontologiebeschrijving/">Historie</a></li>
+					</ul>
                </ul>
-          </section>     
-               </section>
-  <section id="conformance"><div class="header-wrapper"><h2 id="x2-conformiteit"><bdi class="secno">2. </bdi>Conformiteit</h2><a class="self-link" href="#conformance" aria-label="Permalink for Section 2."></a></div><p>Naast onderdelen die als niet normatief gemarkeerd zijn, zijn ook alle diagrammen, voorbeelden, en noten in dit document niet normatief. Verder is alles in dit document normatief.</p></section>
-  <section id="tof"></section>
-  <section id="index" class="appendix"><div class="header-wrapper"><h2 id="a-index"><bdi class="secno">A. </bdi>Index</h2><a class="self-link" href="#index" aria-label="Permalink for Appendix A."></a></div><section id="index-defined-here">
-    <div class="header-wrapper"><h3 id="a-1-begrippen-gedefinieerd-door-deze-specificatie"><bdi class="secno">A.1 </bdi>Begrippen gedefinieerd door deze specificatie</h3><a class="self-link" href="#index-defined-here" aria-label="Permalink for Appendix A.1"></a></div>
-    <ul class="index">
-    
-  </ul>
-  </section><section id="index-defined-elsewhere">
-    <div class="header-wrapper"><h3 id="a-2-begrippen-gedefinieerd-door-verwijzing"><bdi class="secno">A.2 </bdi>Begrippen gedefinieerd door verwijzing</h3><a class="self-link" href="#index-defined-elsewhere" aria-label="Permalink for Appendix A.2"></a></div>
-    <ul class="index">
-    
-  </ul>
-  </section></section>
+          </section>  
+		  
+<div class="header-wrapper"><h2 id="koppelvlakken">Koppelvlakken</h2><a class="self-link" href="#cat" aria-label="Permalink for this Section"></a></div>
+<p>Gebaseerd op de ontologie zijn koppelvlakspecificaties gemaakt. Deze vindt u hieronder in de lijst. Door te klikken op een van de koppelvlakspecificaties, opent u de details.</p>		  
+               
+		<section>
+               <ul>
+				<li><a class="link" href="https://github.com/vng-gbi/Levensonderhoud-aanvraag">Levensonderhoud - Aanvraag</a></li>
+				<li><a class="link" href="https://github.com/vng-gbi/Levensonderhoud-behandelen">Levensonderhoud - Behandelen (in ontwikkeling)</a></li>				
+				<li><a class="link" href="https://github.com/vng-gbi/Levensonderhoud-beslissen">Levensonderhoud - Beslissen</a></li>
+				<li><a class="link" href="#">Bijzondere bijstand - Beslissen (in ontwikkeling)</a></li>
+
+               </ul>
+          </section> </section>
 
 
 
