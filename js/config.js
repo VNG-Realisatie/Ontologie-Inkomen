@@ -9,7 +9,7 @@ let respecConfig = {
   specType: "im",
   
   // Zie de globale property 'localizationStrings/nl' voor de lijst met toegestane specificatie-statussen
-  specStatus: "VV",
+  specStatus: "vv",
   publishDate: "2025-06-01",
   publishVersion: "1.2.0",
 
@@ -20,7 +20,7 @@ let respecConfig = {
   
   title: "Ontologie inkomen",
   subtitle: "",
-  content: {},
+ // content: {},
   authors:
     [
       {
