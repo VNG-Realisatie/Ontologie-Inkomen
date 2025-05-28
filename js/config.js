@@ -9,7 +9,7 @@ let respecConfig = {
   specType: "im",
   
   // Zie de globale property 'localizationStrings/nl' voor de lijst met toegestane specificatie-statussen
-  specStatus: "IO",
+  specStatus: "VV",
   publishDate: "2025-06-01",
   publishVersion: "1.2.0",
 
@@ -19,16 +19,16 @@ let respecConfig = {
   //previousPublishVersion: "0.0.4",
   
   title: "Ontologie inkomen",
-//  subtitle: "Tevens een voorbeeld van een gegenereerd Respec document",
-//  content: {"mermaid": "", "ch01": "informative", "ch02": ""},
-//  authors:
-//    [
-//      {
-//        name: "Robert Melskens",
-//        company: "VNG Realisatie",
-//        companyURL: "https://vng.nl/artikelen/vng-realisatie",
-//      }
-//    ],
+  subtitle: "",
+  content: {},
+  authors:
+    [
+      {
+        name: "Jan Brinkkemper",
+        company: "VNG Realisatie",
+        companyURL: "https://vng.nl/artikelen/vng-realisatie",
+     }
+    ],
   editors:
     [
       {
