@@ -63,20 +63,70 @@ let respecConfig = {
            "rawDate": "2023"
         },
     },
-	labelColor: {
-    "def": "#045D9F",
-    "wv": "#FF0000",
-    "cv": "#045D9F",
-    "vv": "#045D9F",
-    "basis": "#80CC28",
-    "ld": "#80CC28"
-		},
-	sotdText: {
+    localizationStrings: {
+        nl: {
+            // Specificatie-statussen	
+            cv: "Consultatieversie",
+            vv: "Versie ter vaststelling",
+	    ig: "In Gebruik versie",
+	    io: "In Ontwikkeling versie",
+ //           tg: "Teruggetrokken versie",
+	    // Specificatie-types
+            im: "Informatiemodel",
+            hl: "Handleiding",
+//            basis: "Document",
+//            no: "Norm",
+            st: "Standaard",
+//            pr: "Praktijkrichtlijn",
+//            wa: "Werkafspraak",
+//            al: "Algemeen",
+//            bd: "Beheerdocumentatie",
+//            bp: "Best practice",
+        },
+//        en: {
+            // Specificatie-statussen	
+//            cv: "Recommendation",
+//            vv: "Proposed recommendation",
+//            eo: "Outdated version",
+//            tg: "Rescinded version",
+	    // Specificatie-types
+//            basis: "Document",
+//            no: "Norm",
+//            st: "Standard",
+//            im: "Information model",
+//            pr: "Guideline",
+//            hr: "Guide",
+//            wa: "Proposed recommendation",
+//            al: "General",
+//            bd: "Governance documentation",
+//            bp: "Best practice",
+//        },
+    },
+
+    sotdText: {
         nl: {
             sotd: "Status van dit document",
-            cv: `Dit is een door de werkgroep Ontologie goedgekeurde consultatieversie. Commentaar over dit document kan gestuurd worden naar gemeld worden via de knop Dien een melding in`,
-            vv: `Dit is een definitief concept van de nieuwe versie van dit document. Wijzigingen naar aanleiding van consultaties zijn doorgevoerd.`,
+            cv: "Dit is een door het werkgroep Ontologie goedgekeurde consultatieversie. Commentaar over dit document kan gestuurd worden via de knop Dien een melding in",
+            vv: "Dit is een definitief concept van de nieuwe versie van dit document. Wijzigingen naar aanleiding van consultaties zijn doorgevoerd.",
 	    ig: "Dit document is 'In Gebruik'.",
-	    io: "Dit document is nog 'In Ontwikkeling'."
-	}
+	    io: "Dit document is nog 'In Ontwikkeling'.",
+        },
+//      en: {
+//          sotd: "Status of This Document",
+//          def: `This is the definitive version of this document. Edits resulting from consultations have been applied.`,
+//          wv: `This is a draft that could be altered, removed or replaced by other documents. It is not a recommendation approved by TO.`,
+//          cv: `This is a proposed recommendation approved by TO. Comments regarding this document may be sent to `,
+//          vv: `This is the definitive concept of this document. Edits resulting from consultations have been applied.`,
+//          basis: "This document has no official standing.",
+//	    ig: "This document is 'In Use'.",
+//	    io: "This document is is still 'Under Development'.",
+//        },
+    },
+
+    labelColor: {
+//        def: "#154273",
+//        wv: "#39870c",
+	ig: "#A569BD",
+	io: "#DC7633"
+    }
 }
