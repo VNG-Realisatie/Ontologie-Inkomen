@@ -70,15 +70,5 @@ let respecConfig = {
     "vv": "#045D9F",
     "basis": "#80CC28",
     "ld": "#80CC28"
-  },
-  sotdText: {
-    "nl": {
-      "sotd": "Status van dit document",
-      "def": "Dit is de definitieve versie van dit document. Wijzigingen naar aanleiding van consultaties zijn doorgevoerd.",
-      "wv": "Dit is een werkversie die op elk moment kan worden gewijzigd, verwijderd of vervangen door andere documenten. Het is geen stabiel document.",
-      "cv": "Dit is een consultatieversie. Commentaar op deze versie kan via knop Dien een melding in",
-      "vv": "Dit is de definitieve conceptversie van dit document. Wijzigingen naar aanleiding van consultaties zijn doorgevoerd.",
-      "basis": "Dit is een document zonder officiële status.",
-      "ld": "Dit is een levend document dat regelmatig gewijzigd wordt."
-    }
+  }
 }
