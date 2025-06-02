@@ -76,7 +76,7 @@ let respecConfig = {
       "sotd": "Status van dit document",
       "def": "Dit is de definitieve versie van dit document. Wijzigingen naar aanleiding van consultaties zijn doorgevoerd.",
       "wv": "Dit is een werkversie die op elk moment kan worden gewijzigd, verwijderd of vervangen door andere documenten. Het is geen stabiel document.",
-      "cv": "Dit is een consultatieversie. Commentaar op deze versie kan [hier](https://github.com/VNG-Realisatie/Ontologie-Inkomen/issues) gemeld worden.",
+      "cv": "Dit is een consultatieversie. Commentaar op deze versie https://github.com/VNG-Realisatie/Ontologie-Inkomen/issues ",
       "vv": "Dit is de definitieve conceptversie van dit document. Wijzigingen naar aanleiding van consultaties zijn doorgevoerd.",
       "basis": "Dit is een document zonder officiële status.",
       "ld": "Dit is een levend document dat regelmatig gewijzigd wordt."
