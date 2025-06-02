@@ -70,5 +70,13 @@ let respecConfig = {
     "vv": "#045D9F",
     "basis": "#80CC28",
     "ld": "#80CC28"
-  }
+		},
+	sotdText: {
+        nl: {
+            sotd: "Status van dit document",
+            cv: `Dit is een door de werkgroep Ontologie goedgekeurde consultatieversie. Commentaar over dit document kan gestuurd worden naar gemeld worden via de knop Dien een melding in`,
+            vv: `Dit is een definitief concept van de nieuwe versie van dit document. Wijzigingen naar aanleiding van consultaties zijn doorgevoerd.`,
+	    ig: "Dit document is 'In Gebruik'.",
+	    io: "Dit document is nog 'In Ontwikkeling'."
+	}
 }
