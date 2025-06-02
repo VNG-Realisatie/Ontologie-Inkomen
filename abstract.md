@@ -1,0 +1,1 @@
+Dit is de overzichtpagina van de ontologie inkomen. Hier vindt u alle submodellen en de github pagina's van de verschillende koppelvlakken die ontwikkeld zijn op basis van de ontologie. 
