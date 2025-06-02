@@ -1,6 +1,6 @@
 let respecConfig = {
 //  useLogo: true,
-//  useLabel: true,
+  useLabel: true,
 //  license: "eupl",
   shortName: "OntInk",
   pubDomain: "cim",
@@ -9,7 +9,7 @@ let respecConfig = {
   specType: "im",
   
   // Zie de globale property 'localizationStrings/nl' voor de lijst met toegestane specificatie-statussen
-  specStatus: "vv",
+  specStatus: "cv",
   publishDate: "2025-06-01",
   publishVersion: "1.2.0",
 
