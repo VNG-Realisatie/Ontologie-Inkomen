@@ -77,7 +77,7 @@ var organisationConfig = {
     sotdText: {
         nl: {
             sotd: "Status van dit document",
-            cv: "Dit is een door het werkgroep Ontologie goedgekeurde consultatieversie. Commentaar over dit document ontvangen we graag: [Dien een melding in](https://github.com/VNG-Realisatie/Ontologie-Inkomen/issues)",
+            cv: "Dit is een door het werkgroep Ontologie goedgekeurde consultatieversie. Commentaar over dit document ontvangen we graag via de knop bovenaan de pagina: Dien een melding in",
             vv: "Dit is een definitief concept van de nieuwe versie van dit document. Wijzigingen naar aanleiding van consultaties zijn doorgevoerd.",
 	    ig: "Dit document is 'In Gebruik'.",
 	    io: "Dit document is nog 'In Ontwikkeling'.",
